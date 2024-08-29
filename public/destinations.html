@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="destinations"></div>
+
+    <script src="script.js"></script>
+    
+    <script>
+        // Extract the season from the query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const season = urlParams.get('season');
+
+        // Fetch and display the destinations for the selected season
+        if (season) {
+            fetchDestinations(season);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itinerary Planner</title>
+    <style>
+        /* Add some basic styles for layout */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            padding: 8px;
+            cursor: pointer;
+            border-bottom: 1px solid #ddd;
+        }
+        input[type="text"] {
+            padding: 8px;
+            margin: 10px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Itinerary Planner</h1>
+
+    <div>
+        <h2>Create New Itinerary</h2>
+        <input type="text" id="itineraryName" placeholder="Enter Itinerary Name">
+        <button onclick="createItinerary()">Create Itinerary</button>
+    </div>
+
+    <div>
+        <h2>Search Itinerary by ID</h2>
+        <input type="text" id="searchItineraryId" placeholder="Enter Itinerary ID">
+        <button onclick="searchItineraryById()">Search</button>
+    </div>
+
+    <h2>Itineraries</h2>
+    <ul id="itinerariesList"></ul>
+
+    <div id="destinationsSection" style="display:none;">
+        <h2>Destinations in <span id="selectedItineraryName"></span></h2>
+        <input type="text" id="destinationName" placeholder="Enter Destination Name">
+        <button onclick="createDestination()">Add Destination</button>
+        <ul id="destinationsList"></ul>
+        <button onclick="goBackToItineraries()">Back to Itineraries</button>
+    </div>
+
+    <script>
+        const baseUrl = "http://localhost:3001/itineraries";
+        let selectedItineraryId = null;
+
+        // Function to create a new itinerary
+        function createItinerary() {
+            const itineraryName = document.getElementById("itineraryName").value;
+
+            fetch(baseUrl, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ name: itineraryName }),
+            })
+            .then((response) => response.json())
+            .then((data) => {
+                console.log("Success:", data);
+                document.getElementById("itineraryName").value = "";
+                loadItineraries();
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+            });
+        }
+
+        // Function to load all itineraries
+        function loadItineraries() {
+            fetch(baseUrl)
+            .then((response) => response.json())
+            .then((data) => {
+                const itinerariesList = document.getElementById("itinerariesList");
+                itinerariesList.innerHTML = "";
+                data.forEach((itinerary) => {
+                    const listItem = document.createElement("li");
+                    listItem.textContent = `ID: ${itinerary.id} - ${itinerary.name}`;
+
+                    // Edit and Delete buttons for itinerary
+                    const editButton = document.createElement("button");
+                    editButton.textContent = "Edit";
+                    editButton.onclick = () => editItinerary(itinerary.id);
+
+                    const deleteButton = document.createElement("button");
+                    deleteButton.textContent = "Delete";
+                    deleteButton.onclick = () => deleteItinerary(itinerary.id);
+
+                    listItem.appendChild(editButton);
+                    listItem.appendChild(deleteButton);
+                    listItem.id = itinerary.id;
+                    listItem.onclick = () => loadDestinations(itinerary.id, itinerary.name);
+                    itinerariesList.appendChild(listItem);
+                });
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+            });
+        }
+
+        // Function to load destinations for a selected itinerary
+        function loadDestinations(itineraryId, itineraryName) {
+            selectedItineraryId = itineraryId;
+            document.getElementById("selectedItineraryName").textContent = itineraryName;
+            document.getElementById("itinerariesList").style.display = "none";
+            document.getElementById("destinationsSection").style.display = "block";
+
+            fetch(`${baseUrl}/${itineraryId}`)
+            .then((response) => response.json())
+            .then((data) => {
+                const destinationsList = document.getElementById("destinationsList");
+                destinationsList.innerHTML = "";
+                data.destinations.forEach((destination) => {
+                    const listItem = document.createElement("li");
+                    listItem.textContent = `ID: ${destination.id} - ${destination.name}`;
+
+                    // Edit and Delete buttons for destination
+                    const editButton = document.createElement("button");
+                    editButton.textContent = "Edit";
+                    editButton.onclick = () => editDestination(destination.id);
+
+                    const deleteButton = document.createElement("button");
+                    deleteButton.textContent = "Delete";
+                    deleteButton.onclick = () => deleteDestination(destination.id);
+
+                    listItem.appendChild(editButton);
+                    listItem.appendChild(deleteButton);
+                    listItem.id = destination.id;
+                    destinationsList.appendChild(listItem);
+                });
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+            });
+        }
+
+        // Function to edit an itinerary
+        function editItinerary(itineraryId) {
+            const newName = prompt("Enter new name for the itinerary:");
+            if (newName) {
+                fetch(`${baseUrl}/${itineraryId}`, {
+                    method: "PUT",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ name: newName }),
+                })
+                .then((response) => response.json())
+                .then(() => {
+                    loadItineraries();
+                })
+                .catch((error) => {
+                    console.error("Error:", error);
+                });
+            }
+        }
+
+        // Function to delete an itinerary
+        function deleteItinerary(itineraryId) {
+            if (confirm("Are you sure you want to delete this itinerary?")) {
+                fetch(`${baseUrl}/${itineraryId}`, {
+                    method: "DELETE",
+                })
+                .then(() => {
+                    loadItineraries();
+                })
+                .catch((error) => {
+                    console.error("Error:", error);
+                });
+            }
+        }
+
+        // Function to edit a destination
+        function editDestination(destinationId) {
+            const newName = prompt("Enter new name for the destination:");
+            if (newName) {
+                fetch(`${baseUrl}/${selectedItineraryId}/destinations/${destinationId}`, {
+                    method: "PUT",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ name: newName }),
+                })
+                .then((response) => response.json())
+                .then(() => {
+                    loadDestinations(
+                        selectedItineraryId,
+                        document.getElementById("selectedItineraryName").textContent
+                    );
+                })
+                .catch((error) => {
+                    console.error("Error:", error);
+                });
+            }
+        }
+
+        // Function to delete a destination
+        function deleteDestination(destinationId) {
+            if (confirm("Are you sure you want to delete this destination?")) {
+                fetch(`${baseUrl}/${selectedItineraryId}/destinations/${destinationId}`, {
+                    method: "DELETE",
+                })
+                .then(() => {
+                    loadDestinations(
+                        selectedItineraryId,
+                        document.getElementById("selectedItineraryName").textContent
+                    );
+                })
+                .catch((error) => {
+                    console.error("Error:", error);
+                });
+            }
+        }
+
+        // Function to create a new destination within an itinerary
+        function createDestination() {
+            const destinationName = document.getElementById("destinationName").value;
+
+            fetch(`${baseUrl}/${selectedItineraryId}/destinations`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify({ name: destinationName }),
+            })
+            .then((response) => response.json())
+            .then((data) => {
+                console.log("Success:", data);
+                document.getElementById("destinationName").value = "";
+                loadDestinations(
+                    selectedItineraryId,
+                    document.getElementById("selectedItineraryName").textContent
+                );
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+            });
+        }
+
+        // Function to search for an itinerary by ID
+        function searchItineraryById() {
+            const itineraryId = document.getElementById("searchItineraryId").value;
+
+            if (itineraryId.trim() === "") {
+                alert("Please enter a valid Itinerary ID.");
+                return;
+            }
+
+            fetch(`${baseUrl}/${itineraryId}`)
+            .then((response) => {
+                if (response.ok) {
+                    return response.json();
+                } else {
+                    throw new Error("Itinerary not found.");
+                }
+            })
+            .then((itinerary) => {
+                const itinerariesList = document.getElementById("itinerariesList");
+                itinerariesList.innerHTML = `<li>ID: ${itinerary.id} - ${itinerary.name}</li>`;
+            })
+            .catch((error) => {
+                alert(error.message);
+            });
+        }
+
+        // Function to go back to the itineraries list
+        function goBackToItineraries() {
+            document.getElementById("destinationsSection").style.display = "none";
+            document.getElementById("itinerariesList").style.display = "block";
+            selectedItineraryId = null;
+        }
+
+        // Initial load of itineraries
+        loadItineraries();
+    </script>
+</body>
+</html>

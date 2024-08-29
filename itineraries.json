@@ -1,0 +1,21 @@
+[
+    {
+      "id": "5221",
+      "name": "SHIMLA",
+      "destinations": [
+        {
+          "id": "1",
+          "name": "abc"
+        },
+        {
+          "id": "2",
+          "name": "xyz"
+        }
+      ]
+    },
+    {
+      "id": "3471",
+      "name": "KASHMIR",
+      "destinations": []
+    }
+  ]

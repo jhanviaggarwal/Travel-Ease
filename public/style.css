@@ -1,0 +1,193 @@
+.button:hover {
+    transform: scale(1.05); /* Slightly enlarge the button */
+    background-color: #3b4a8f; /* Darken the background color */
+    filter: brightness(1.2); /* Lighten the image */
+}
+
+.button {
+    display: inline-block;
+    margin: 10px 7px;
+    padding: 240px 200px;
+    background-color: #4c59af; /* Fallback color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.list-item {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+
+/* Container for the season buttons */
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
+    grid-gap: 15px; /* Space between the grid items */
+    margin-top: 20px; /* Add space between the bar and buttons */
+}
+
+/* Style for each season button */
+.list-item {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    
+}
+
+.season-button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
+    grid-gap: 15px; /* Space between the grid items */
+    margin-top: 20px; /* Add space between the bar and buttons */
+}
+
+/* Style for each season button */
+.season-item {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    padding: 20px;
+    background-color: #f0f0f0; /* Darker background for season buttons */
+    color: white; /* Light text color */
+    height: 500px;
+}
+
+.season-item:hover {
+    transform: scale(1.05);
+    background-color: #e0e0e0; /* Darkens the background color */
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Image inside the season button */
+.season-image {
+    width: 100%;
+    height: 400px; /* Adjust the height as needed */
+    object-fit: cover; /* Cover the entire button with the image */
+    display: block;
+}
+
+/* Text under the image in season button */
+.season-name {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-top: 1px solid #ddd; /* Optional: adds a border between the image and text */
+}
+
+.season-bar{
+    background-color: #457a51; /* Bar background color */
+    color: white; /* Text color */
+    padding: 0.1px 130px; /* Space inside the bar */
+    text-align: center; /* Center-align the text */
+    font-size: 24px; /* Font size for the heading */
+    font-weight: bold; /* Bold text */
+    font-family: 'Roboto', sans-serif;
+    border-radius: 2px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 10px; /* Space below the bar */
+    width: 80%; /* Width of the bar */
+    margin: 0 auto 20px auto;
+}
+
+
+
+/* Style for the bar */
+.destination-bar {
+    background-color: #4c59af; /* Bar background color */
+    color: white; /* Text color */
+    padding: 0.1px 130px; /* Space inside the bar */
+    text-align: center; /* Center-align the text */
+    font-size: 24px; /* Font size for the heading */
+    font-weight: bold; /* Bold text */
+    font-family: 'Roboto', sans-serif;
+    border-radius: 2px; /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 10px; /* Space below the bar */
+    width: 80%; /* Width of the bar */
+    margin: 0 auto 20px auto; /* Center the bar horizontally */
+}
+
+/* Separate container for buttons */
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 10px; /* Space between the grid items */
+}
+
+/* Style for the destination buttons */
+.list-item {
+    padding: 20px;
+    background-color: #f0f0f0; /* Light grey background for buttons */
+    color: #333; /* Dark text color */
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.list-item:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    background-color: #e0e0e0; /* Slightly darker grey on hover */
+}
+
+/* Container for the buttons */
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
+    grid-gap: 12px; /* Space between the grid items */
+}
+
+/* Style for each destination button */
+.list-item {
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Image inside the button */
+.destination-image {
+    width: 100%;
+    height: 180px; 
+    object-fit: cover; /* to cover the entire button with the image */
+    display: block;
+}
+
+/*Text under the image*/
+.destination-name {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-top: 1px solid #ddd; 
+}
+
+/* Hover effects for the button */
+.list-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
