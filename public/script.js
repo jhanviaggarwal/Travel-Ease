@@ -33,7 +33,7 @@ seasons.forEach((season) => {
     div.className = "season-item";
 
     const image = document.createElement("img");
-    image.src = `./assets/${season.toLowerCase()}1.jpg`; // Replace with your image paths
+    image.src = `./assets/${season.toLowerCase()}1.jpg`; 
     image.className = "season-image";
 
     const name = document.createElement("div");
@@ -59,7 +59,7 @@ function fetchDestinations(season) {
         
         const titleBar = document.createElement("div");
         titleBar.className = "destination-bar";
-        titleBar.innerHTML = "<h2>Select a Destination</h2>";
+        titleBar.innerHTML = "<h2>Discover Your Destination</h2>";
         
         destinationContainer.innerHTML = "";
         destinationContainer.appendChild(titleBar);
