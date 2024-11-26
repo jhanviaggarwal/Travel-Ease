@@ -207,58 +207,65 @@ app.post("/destination", (req, res) => {
   res.status(201).json(newDest);
 });
 
-// Retrieve destinations for a particular season DIYA
+app.get("/destinations", (req, res) => {
+  let destinations = readFile(destinationFile); // Read destinations from the file
+  
+  // Check if destinations are found
+  if (destinations && destinations.length > 0) {
+    res.status(200).json(destinations); // Return destinations as JSON response
+  } else {
+    res.status(404).json({ message: "Destinations not found." }); // Handle error if no destinations found
+  }
+});
+
+// Retrieve destinations for a particular season  DIYA
 app.get("/destination/:season", (req, res) => {
   const season = req.params.season.toLowerCase();
   const destinations = readFile(destinationFile);
-  
-  // Log destinations for debugging
-  console.log(destinations); 
-
-  const selectedDest = destinations.filter((dest) => {
-    return dest.season && dest.season.toLowerCase() === season;
-  });
-
-  if (selectedDest.length === 0) {
-    return res.status(404).send("No destinations found for the specified season.");
-  }
-
+  const selectedDest = destinations.filter(
+    (dest) => dest.season.toLowerCase() === season
+  );
   res.status(200).json(selectedDest.map((dest) => dest.destination));
 });
 
-// Retrieve places for a particular destination  // PRAGATI
-app.get("/destinations/:destination", (req, res) => {
-  try {
-    // Extract the destination from URL parameters
-    const destination = req.params.destination.trim().toLowerCase();
-
-    if (!destination) {
-      return res.status(400).json({ error: "Destination is required." });
+app.delete('/destinations/:id',(req,res)=>{
+  const id = parseInt(req.params.id);
+  const destinations = readFile(destinationFile);
+  for(let i=0; i<destinations.length; i++){
+    if(destinations[i].id===id){
+      destinations.splice(i,1);
+      writeFile(destinationFile, destinations);
+      res.status(204).send();
+      return;
     }
+  }
+  res.send(404).send(`${id} does not exist.`);
+})
 
-    // Read destinations data from the file
-    const destinations = readFile(destinationFile);
-
-    if (!Array.isArray(destinations)) {
-      return res.status(500).json({ error: "Invalid data format in destinations file." });
+app.put('/destinations/:id',(req,res)=>{
+  const id = parseInt(req.params.id);
+  const destinations = readFile(destinationFile);
+  for (let i = 0; i < destinations.length; i++) {
+    if (destinations[i].id === id) {
+      destinations[i].destination = req.body.destination;
+      writeFile(destinationFile, destinations);
+      res.status(204).send();
+      return;
     }
+  }
+  res.status(404).send(`${id} does not exist.`);
+})
 
-    // Find the destination object that matches the input
-    const destinationData = destinations.find(
-      (dest) => dest.destination.toLowerCase() === destination
-    );
+// Retrieve a destination by id   // DIYA
+app.get("/destinat/:id", (req, res) => {
+  const id = parseInt(req.params.id);
+  const destinations = readFile(destinationFile);
+  const dest = destinations.find((dest) => dest.id === id);
 
-    if (destinationData && destinationData.places) {
-      // Return places array if the destination exists
-      return res.status(200).json(destinationData.places);
-    } else {
-      // If destination not found, return 404
-      return res.status(404).json({ error: "Destination not found." });
-    }
-  } catch (error) {
-    // Handle any unexpected errors
-    console.error("Error retrieving destination places:", error);
-    res.status(500).json({ error: "An error occurred while retrieving places." });
+  if (dest) {
+    res.status(200).json(dest);
+  } else {
+    res.status(404).send(`Id ${id} does not exist.`);
   }
 });
 
