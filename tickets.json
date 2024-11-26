@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1731828682187,
+    "destination": "Lonavala, Maharashtra",
+    "place": "Karla Caves",
+    "visitorName": "Khushi",
+    "visitDate": "2024-12-01",
+    "numTickets": "2"
+  },
+  {
+    "id": 1732193304711,
+    "destination": "Coorg, Karnataka",
+    "place": "Nagarhole National Park",
+    "visitorName": "Namu",
+    "visitDate": "2024-12-07",
+    "numTickets": "4"
+  },
+  {
+    "id": 1732194134942,
+    "destination": "Coorg, Karnataka",
+    "place": "Dubara Elephant Camp",
+    "visitorName": "Nimi",
+    "visitDate": "2024-12-08",
+    "numTickets": "8"
+  },
+  {
+    "id": 1732269713352,
+    "destination": "Varanasi, Uttar Pradesh",
+    "place": "Ramnagar Fort",
+    "visitorName": "Tia",
+    "visitDate": "2024-12-08",
+    "numTickets": "6"
+  },
+  {
+    "id": 1732608924118,
+    "destination": "Jaisalmer, Rajasthan",
+    "place": "Sam Sand Dunes",
+    "visitorName": "P",
+    "visitDate": "2024-12-07",
+    "numTickets": "4"
+  },
+  {
+    "id": 1732616785749,
+    "destination": "Kumarakom, Kerala",
+    "place": "Bay Island Driftwood Museum",
+    "visitorName": "p",
+    "visitDate": "2024-12-07",
+    "numTickets": "1"
+  }
+]

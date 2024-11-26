@@ -1,0 +1,14 @@
+[
+    {
+      "id": 1,
+      "name": "Jhanvi Aggarwal",
+      "email": "jhanvi@gmail.com",
+      "password": "$2a$08$ewip/IJVBJDiHrW0M1uUC.0fnAt5kZLW5M7KrxbYE1D.4/syXcHJq"
+    },
+    {
+      "id": 2,
+      "name": "Jhanvi ",
+      "email": "jhanvi123@gmail.com",
+      "password": "$2a$08$Gbhb8vkwFsLCXx.fiJkDU.bFVyx1g1BZGFO/yoyZK7Jn7EQzM6sVu"
+    }
+  ]

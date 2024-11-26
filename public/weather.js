@@ -54,6 +54,7 @@ const displayWeatherData = (weatherData) => {
                 <input type="text" placeholder="Search" id="city-input"/>
                 <img src="${search_icon}" alt="Search Icon" id="search-btn"/>
             </div>
+            ${weatherData ? `
             <img src="${weatherData.icon}" alt="Weather Icon" class="weather-icon"/>
             <div class="temperature">${weatherData.temperature}°C</div>
             <div class="location">${weatherData.location}</div> 
@@ -73,6 +74,7 @@ const displayWeatherData = (weatherData) => {
                     </div>
                 </div> 
             </div>
+            ` : ''}
         </div>
     `;
 
@@ -82,8 +84,8 @@ const displayWeatherData = (weatherData) => {
   };
 };
 
-// Default city for initial load
-search("Bathinda");
+// Initialize the view with only the search bar
+displayWeatherData(null);
 
 document.getElementById("back-btn").onclick = () => {
   window.location.href = "index.html";

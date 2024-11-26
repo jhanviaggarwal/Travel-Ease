@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "from": "Mumbai",
+    "to": "Delhi",
+    "date": "2024-12-01",
+    "seatsAvailable": "[object Object]1"
+  },
+  {
+    "id": 2,
+    "from": "Chandigarh",
+    "to": "Kashmir",
+    "date": "2024-12-10",
+    "seatsAvailable": {
+      "economy": 60,
+      "business": 25,
+      "first": 15
+    }
+  },
+  {
+    "id": 4,
+    "from": "New York",
+    "to": "Los Angeles",
+    "date": "2024-11-30",
+    "seatsAvailable": {
+      "economy": 50,
+      "business": 10,
+      "first": 5
+    }
+  },
+  {
+    "id": 4,
+    "from": "New York",
+    "to": "Los Angeles",
+    "date": "2024-11-30",
+    "seatsAvailable": {
+      "economy": 50,
+      "business": 10,
+      "first": 5
+    }
+  }
+]

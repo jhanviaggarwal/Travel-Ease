@@ -117,3 +117,22 @@
     font-size: 14px;
     color: #777;
 }
+
+/* Style for the back button */
+#back-btn {
+    background-color: #060080; /* Button background color */
+    color: white; /* Text color */
+    padding: 15px 20px; /* Adjust padding to make the button smaller */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Font size for consistency */
+    margin-top: 20px; /* Space above the button */
+    display: block;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+#back-btn:hover {
+    background-color: #336d99; /* Darker background on hover */
+}

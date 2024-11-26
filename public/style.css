@@ -1,22 +1,252 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Remove parallax effects or unnecessary scrolling */
+.parallax {
+    background-attachment: scroll; /* Change from fixed to scroll */
+}
+
+/* Updated styles for the specific buttons */
+#weather-btn,
+#create-itinerary-btn {
+    padding: 15px 30px;
+    /* Adjust padding to fit your needs */
+    font-size: 16px;
+    /* Keep font size consistent */
+    width: auto;
+    /* Ensure button width adjusts based on content */
+    border-radius: 8px;
+    /* Slightly more rounded corners */
+}
+
+.text-before-buttons {
+    flex: 1;
+    /* Allow text to take up available space */
+}
+
+/* Pragati*/
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+#destinations{
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: #4c59af;
+    /* Bar background color */
+    color: white;
+    /* Text color */
+    text-align: center;
+    /* Center-align the text */
+    font-size: 24px;
+    /* Font size for the heading */
+    font-weight: bold;
+    /* Bold text */
+    font-family: 'Roboto', sans-serif;
+    border-radius: 2px;
+    /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    margin-bottom: 10px;
+    /* Space below the bar */
+    width: 100%;
+    /* Width of the bar */
+    padding: 20px;
+    margin: 0 auto;
+    /* Center the bar horizontally */
+}
+
+#places-container {
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: #4c59af;
+    /* Bar background color */
+    color: rgb(12, 12, 12);
+    /* Text color */
+    text-align: center;
+    /* Center-align the text */
+    font-size: 14px;
+    /* Font size for the heading */
+    font-weight: bold;
+    /* Bold text */
+    font-family: 'Roboto', sans-serif;
+    border-radius: 2px;
+    /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    margin-bottom: 10px;
+    /* Space below the bar */
+    width: 100%;
+    /* Width of the bar */
+    padding: 20px;
+    margin: 0 auto;
+    /* Center the bar horizontally */
+}
+
+/* Info container styling */
+.info-container {
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #315633;
+    /* Background color for the container */
+    border-radius: 5px;
+    /* Rounded corners for the container */
+}
+
+.info-text {
+    font-size: 18px;
+    color: white;
+    /* White text color */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Button styles */
+.action-button {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 10px 0px;
+    background-color: #4c59af;
+    /* Fallback color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.action-button:hover {
+    transform: scale(1.05);
+    /* Slightly enlarge the button */
+    background-color: #3b4a8f;
+    /* Darken the background color */
+}
+
+/* Place bar heading styles */
+.place-bar, .season-bar{
+    justify-content: space-between;
+    box-sizing: border-box;
+    background-color: #4c59af;
+    /* Bar background color */
+    color: white;
+    /* Text color */
+    text-align: center;
+    /* Center-align the text */
+    font-size: 24px;
+    /* Font size for the heading */
+    font-weight: bold;
+    /* Bold text */
+    font-family: 'Roboto', sans-serif;
+    border-radius: 2px;
+    /* Rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    margin-bottom: 10px;
+    /* Space below the bar */
+    width: 100%;
+    /* Width of the bar */
+    padding: 20px;
+    margin: 0 auto;
+    /* Center the bar horizontally */
+}
+
+#places-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%; /* Use full width of the screen */
+    padding: 20px;
+    box-sizing: border-box; /* Includes padding in the width calculation */
+    margin: 0; /* Remove the auto margin */
+}
+
+.place-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 15px;
+    width: calc(33.33% - 20px);
+    /* Responsive layout with spacing */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.place-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    /* to cover the entire button with the image */
+    display: block;
+    margin-bottom: 10px;
+    /*Add space between the image and text*/
+}
+
+.place-item h2,
+.place-item p {
+    margin: 5px 0;
+    /* Reduce margin to make the spacing uniform */
+}
+
+.place-item h2 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.place-item .place-description {
+    font-size: 16px;
+    color: #555;
+}
+
+.place-item .place-hours {
+    font-size: 14px;
+    color: #777;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Button styles */
 .button:hover {
-    transform: scale(1.05); /* Slightly enlarge the button */
-    background-color: #3b4a8f; /* Darken the background color */
-    filter: brightness(1.2); /* Lighten the image */
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow on hover */
 }
 
 .button {
-    display: inline-block;
-    margin: 10px 7px;
-    padding: 240px 200px;
-    background-color: #4c59af; /* Fallback color */
-    color: white;
+    padding: 10px 20px; /* Make buttons consistent in size */
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff; /* White text for contrast */
+    background-color: #007BFF; /* Professional blue color */
     border: none;
+    border-radius: 5px;
     cursor: pointer;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: all 0.3s ease; /* Smooth hover effect */
 }
+
 .list-item {
     margin: 10px 0;
     padding: 10px;
@@ -27,9 +257,12 @@
 /* Container for the season buttons */
 .button-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
-    grid-gap: 15px; /* Space between the grid items */
-    margin-top: 20px; /* Add space between the bar and buttons */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns layout */
+    grid-gap: 15px;
+    /* Space between the grid items */
+    margin-top: 20px;
+    /* Add space between the bar and buttons */
 }
 
 /* Style for each season button */
@@ -41,19 +274,23 @@
     overflow: hidden;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
-    
+
 }
 
 .season-button-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
-    grid-gap: 15px; /* Space between the grid items */
-    margin-top: 20px; /* Add space between the bar and buttons */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns layout */
+    grid-gap: 15px;
+    /* Space between the grid items */
+    margin-top: 20px;
+    /* Add space between the bar and buttons */
 }
 
 /* Style for each season button */
 .season-item {
     position: relative;
+    box-sizing: border-box;
     text-align: center;
     cursor: pointer;
     border-radius: 8px;
@@ -61,22 +298,27 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
     padding: 20px;
-    background-color: #f0f0f0; /* Darker background for season buttons */
-    color: white; /* Light text color */
+    background-color: #f0f0f0;
+    /* Darker background for season buttons */
+    color: white;
+    /* Light text color */
     height: 500px;
 }
 
 .season-item:hover {
     transform: scale(1.05);
-    background-color: #e0e0e0; /* Darkens the background color */
+    background-color: #e0e0e0;
+    /* Darkens the background color */
     box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Image inside the season button */
 .season-image {
     width: 100%;
-    height: 400px; /* Adjust the height as needed */
-    object-fit: cover; /* Cover the entire button with the image */
+    height: 400px;
+    /* Adjust the height as needed */
+    object-fit: cover;
+    /* Cover the entire button with the image */
     display: block;
 }
 
@@ -88,54 +330,27 @@
     color: #333;
     background-color: #f0f0f0;
     padding: 10px;
-    border-top: 1px solid #ddd; /* Optional: adds a border between the image and text */
-}
-
-.season-bar{
-    background-color: #457a51; /* Bar background color */
-    color: white; /* Text color */
-    padding: 0.1px 130px; /* Space inside the bar */
-    text-align: center; /* Center-align the text */
-    font-size: 24px; /* Font size for the heading */
-    font-weight: bold; /* Bold text */
-    font-family: 'Roboto', sans-serif;
-    border-radius: 2px; /* Rounded corners */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin-bottom: 10px; /* Space below the bar */
-    width: 80%; /* Width of the bar */
-    margin: 0 auto 20px auto;
-}
-
-
-
-/* Style for the bar */
-.destination-bar {
-    background-color: #4c59af; /* Bar background color */
-    color: white; /* Text color */
-    padding: 0.1px 130px; /* Space inside the bar */
-    text-align: center; /* Center-align the text */
-    font-size: 24px; /* Font size for the heading */
-    font-weight: bold; /* Bold text */
-    font-family: 'Roboto', sans-serif;
-    border-radius: 2px; /* Rounded corners */
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin-bottom: 10px; /* Space below the bar */
-    width: 80%; /* Width of the bar */
-    margin: 0 auto 20px auto; /* Center the bar horizontally */
+    border-top: 1px solid #ddd;
+    /* Optional: adds a border between the image and text */
 }
 
 /* Separate container for buttons */
 .button-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    grid-gap: 10px; /* Space between the grid items */
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns */
+    grid-gap: 10px;
+    /* Space between the grid items */
 }
 
 /* Style for the destination buttons */
 .list-item {
     padding: 20px;
-    background-color: #f0f0f0; /* Light grey background for buttons */
-    color: #333; /* Dark text color */
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    /* Light grey background for buttons */
+    color: #333;
+    /* Dark text color */
     text-align: center;
     cursor: pointer;
     border-radius: 8px;
@@ -144,33 +359,18 @@
 }
 
 .list-item:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-    background-color: #e0e0e0; /* Slightly darker grey on hover */
-}
-
-/* Container for the buttons */
-.button-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
-    grid-gap: 12px; /* Space between the grid items */
-}
-
-/* Style for each destination button */
-.list-item {
-    position: relative;
-    text-align: center;
-    cursor: pointer;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+    background-color: #e0e0e0;
+    /* Slightly darker grey on hover */
 }
 
 /* Image inside the button */
 .destination-image {
     width: 100%;
-    height: 180px; 
-    object-fit: cover; /* to cover the entire button with the image */
+    height: 180px;
+    object-fit: cover;
+    /* to cover the entire button with the image */
     display: block;
 }
 
@@ -182,12 +382,352 @@
     color: #333;
     background-color: #f0f0f0;
     padding: 10px;
-    border-top: 1px solid #ddd; 
+    border-top: 1px solid #ddd;
 }
 
 /* Hover effects for the button */
 .list-item:hover {
     transform: scale(1.05);
     box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.text-button-container {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+    justify-content: space-between; /* Distributes space between text and button */
+    background-color: #f4f4f4; /* Light background for a cleaner look */
+    padding: 10px 20px; /* Add padding around the container */
+    margin: 10px 0; /* Add space between each section */
+    border-radius: 8px; /* Rounds the corners for a modern appearance */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  }
+  
+  .text-before-buttons {
+    font-size: 16px; /* Set a standard font size */
+    font-weight: 500; /* Slightly bold for better readability */
+    color: #333; /* Dark text color for better contrast */
+  }
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    float: right;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Container for action buttons */
+.action-buttons-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 15px; /* Space between buttons */
+    margin-top: 10px; /* Add spacing above the buttons */
+}
+
+/* Update Ticket Button Styles */
+.update-button {
+    background-color: #008ae6; /* Orange color for distinction */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.update-button:hover {
+    background-color: #008ae6; /* Slightly darker orange on hover */
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+/* Adjust Cancel Button Styles */
+.cancel-button {
+    background-color: #ff4d4d; /* Slightly softer red */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cancel-button:hover {
+    background-color: #e63939; /* Darker red on hover */
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+/* Adjust Book Ticket Button Styles */
+.ticket-button {
+    background-color: #4CAF50; /* Green for booking */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ticket-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slight enlargement on hover */
+}
+
+/* Chatbot Styles */
+.chatbot-toggle {
+    position: fixed; /* Sticks to the corner */
+    bottom: 80px; /* Increased space from the bottom */
+    right: 20px; /* Distance from the right side */
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .chatbot-toggle:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+
+.chatbot-window {
+    display: none;
+    position: fixed;
+    bottom: 100px; /* Adjust position as needed */
+    right: 20px;
+    width: 300px;
+    max-height: 500px; /* Limit height */
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto; /* Scrollable for overflow content */
+    display: flex;
+    flex-direction: column; /* Stack messages vertically */
+    padding: 10px;
+    z-index: 1000;
+}
+
+#chatbot-header {
+    background-color: #2196F3;
+    color: white;
+    padding: 15px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#chatbot-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#chatbot-messages {
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+    max-width: 80%; /* Limit width of messages */
+    word-wrap: break-word; /* Break long words */
+    align-self: flex-start; /* Align to the left */
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.chat-message {
+    max-width: 80%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    margin: 5px 0;
+    word-wrap: break-word;
+}
+
+#chatbot-input-container {
+    display: flex;
+    margin-top: auto; /* Stick input box to the bottom */
+    border-top: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+#chatbot-input {
+    flex: 1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#chatbot-send {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#chatbot-send:hover {
+    background-color: #45a049;
+}
+
+/* Additional Chatbot Styles */
+.typing {
+    background-color: #f0f0f0;
+    padding: 8px 12px;
+    border-radius: 15px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    font-style: italic;
+    color: #666;
+}
+
+.chat-message.bot {
+    background-color: #f5f5f5;
+    border-radius: 15px 15px 15px 5px;
+    margin-right: 20%;
+    line-height: 1.4;
+    white-space: pre-line;
+}
+
+.chat-message.user {
+    background-color: #e3f2fd;
+    border-radius: 15px 15px 5px 15px;
+    margin-left: 20%;
+    line-height: 1.4;
+}
+
+.suggested-questions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    margin-bottom: 10px;
+}
+
+.suggested-question {
+    background-color: #e3f2fd;
+    padding: 8px 12px;
+    border-radius: 15px;
+    font-size: 0.9em;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.suggested-question:hover {
+    background-color: #bbdefb;
+    transform: translateY(-1px);
+}
+
+/* User message styling */
+.user-message {
+    align-self: flex-end; /* Align to the right */
+    background-color: #e0f7fa;
+    color: #006064;
+}
+
+/* Styling the buttons */
+button {
+    padding: 10px 10px; /* Increase padding */
+    margin: 5px 5px;   /* Add space between buttons */
+    border: none;       /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;    /* Change cursor to pointer on hover */
+    font-size: 16px;     /* Increase font size for better readability */
+  }
+  
+  /* Specific styling for the Places to Visit button */
+  .places-btn {
+    background-color: #073464;  /* Blue background */
+    color: white;               /* White text */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Specific styling for the Hotel Recommendations button */
+  .hotels-btn {
+    background-color: #073464;  /* Blue background */
+    color: white;               /* White text */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  /* Hover effect for buttons */
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.text-button-container {
+    display: flex;
+    align-items: center; /* Center-align items vertically */
+    justify-content: center; /* Center-align items horizontally */
+    margin: 20px 0; /* Add some vertical margin */
+}
+
+/* Style for the text before the buttons */
+.text-before-buttons {
+    font-family: 'Arial', sans-serif; /* Same font style as the rest of the text */
+    font-size: 18px; /* Adjust font size as needed */
+    font-weight: bold; /* Make text bold */
+    color: white; /* White text color */
+    background-color: #333; /* Background color */
+    padding: 15px; /* Add some padding around the text */
+    border-radius: 5px; /* Rounded corners for a softer look */
+    text-align: center; /* Center-align the text */
+    margin-right: 20px; /* Space between text and button */
+    flex: 1; /* Allow the text to take up available space */
+}
+
+#book-flight-btn {
+    padding: 15px 30px; /* Adjust padding to fit your needs */
+    font-size: 16px; /* Keep font size consistent */
+    width: auto; /* Ensure button width adjusts based on content */
+    border-radius: 8px; /* Slightly more rounded corners */
+    background-color: #2196F3;; /* Same background color as other buttons */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-align: center; /* Center-align text within the button */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition effects */
+}
+
+#book-flight-btn:hover {
+    background-color: #2196F3;; /* Darker shade for hover effect */
+    transform: scale(1.05); /* Slightly enlarge the button */
 }
 

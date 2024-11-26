@@ -1,670 +1,776 @@
 [
-    {
-      "id": 1,
-      "season": "Summer",
-      "destination": "Shimla, Himachal Pradesh",
-      "places": [
-        {
-          "name": "Mall Road",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Kufri",
-          "description": "A popular garden known for its vibrant atmosphere.",
-          "opening_hours": "24 Hours"
-        },
-        {
-          "name": "Jakhoo Temple",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Christ Church",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Tara Devi Temple",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "The Ridge",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        }
-      ]
-    },
-    {
-      "id": 2,
-      "season": "Summer",
-      "destination": "Manali, Himachal Pradesh",
-      "places": [
-        {
-          "name": "Rohtang Pass",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Hadimba Temple",
-          "description": "A popular garden known for its vibrant atmosphere.",
-          "opening_hours": "24 Hours"
-        },
-        {
-          "name": "Old Manali",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Solang Valley",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Vashisht Hot Water Springs",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Jogini Water Falls",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "season": "Summer",
-      "destination": "Nainital, Uttarakhand",
-      "places": [
-        {
-          "name": "Naini Lake",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Naina Devi Temple",
-          "description": "A popular garden known for its vibrant atmosphere.",
-          "opening_hours": "24 Hours"
-        },
-        {
-          "name": "Snow View Point",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Nainital Zoo",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Sattal Lake",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Eco Cave Gardens",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        }
-      ]
-    },
-    {
-      "id": 4,
-      "season": "Summer",
-      "destination": "Munnar, Kerala",
-      "places": [
-        {
-          "name": "Anamudi Peak",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Eravikulam National Park",
-          "description": "A popular garden known for its vibrant atmosphere.",
-          "opening_hours": "24 Hours"
-        },
-        {
-          "name": "Kundala Lake",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Attukal Waterfalls",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Mattupetty Dam",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Tea Gardens",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        }
-      ]
-    },
-    {
-      "id": 5,
-      "season": "Summer",
-      "destination": "Ladakh, Jammu and Kashmir",
-      "places": [
-        {
-          "name": "Pangong Lake",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Nubra Valley",
-          "description": "A popular garden known for its vibrant atmosphere.",
-          "opening_hours": "24 Hours"
-        },
-        {
-          "name": "Magnetic Hill",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Leh Palace",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Shanti Stupa",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Khardung La Pass",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        }
-      ]
-    },
-    {
-      "id": 6,
-      "season": "Summer",
-      "destination": "Coorg, Karnataka",
-      "places": [
-        {
-          "name": "Dubara Elephant Camp",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Talacauvery",
-          "description": "A popular garden known for its vibrant atmosphere.",
-          "opening_hours": "24 Hours"
-        },
-        {
-          "name": "Abbey Falls",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Iruppu Falls",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Nagarhole National Park",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Namdrolihe Monastery",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        }
-      ]
-    },
-    {
-      "id": 7,
-      "season": "Winter",
-      "destination": "Goa",
-      "places": [
-        {
-          "name": "Baga Beach",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Anjuna Beach",
-          "description": "A popular garden known for its vibrant atmosphere.",
-          "opening_hours": "24 Hours"
-        },
-        {
-          "name": "Dudhsagar Waterfalls",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Calangute Beach",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Fort Aguada",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Se Cathedral",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        }
-      ]
-    },
-    {
-      "id": 8,
-      "season": "Winter",
-      "destination": "Jaisalmer, Rajasthan",
-      "places": [
-        {
-          "name": "Jaisalmer Fort",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Sam Sand Dunes",
-          "description": "A popular garden known for its vibrant atmosphere.",
-          "opening_hours": "24 Hours"
-        },
-        {
-          "name": "Patwon Ki Haveli",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Gadisar Lake",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Bada Bagh",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Kuldhara Village",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "season": "Winter",
-      "destination": "Rann of Kutch, Gujarat",
-      "places": [
-        {
-          "name": "Great Rann of Kutch",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Kutch Museum",
-          "description": "A popular garden known for its vibrant atmosphere.",
-          "opening_hours": "24 Hours"
-        },
-        {
-          "name": "Narayan Sarovar",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Kutch Desert Wildlife Sanctuary",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Prag Mahal",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Mandvi Beach",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        }
-      ]
-    },
-    {
-      "id": 10,
-      "season": "Winter",
-      "destination": "Hampi, Karnataka",
-      "places": [
-        {
-          "name": "Lotus Mahal",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Virupaksha Temple",
-          "description": "A popular garden known for its vibrant atmosphere.",
-          "opening_hours": "24 Hours"
-        },
-        {
-          "name": "Hampi Bazaar",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Matanga Hill",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Queen's Bath",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Vithala Temple",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        }
-      ]
-    },
-    {
-      "id": 11,
-      "season": "Winter",
-      "destination": "Udaipur, Rajasthan",
-      "places": [
-        {
-          "name": "Lake Pichola",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Sajangarh Palace",
-          "description": "A popular garden known for its vibrant atmosphere.",
-          "opening_hours": "24 Hours"
-        },
-        {
-          "name": "Jagdish Temple",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Shilpgram",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Fateh Sagar Lake",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "City Palace",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        }
-      ]
-    },
-    {
-      "id": 9,
-      "season": "Winter",
-      "destination": "Varanasi, Uttar Pradesh",
-      "places": [
-        {
-          "name": "Kashi Vishwanath Temple",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Ramnagar Fort",
-          "description": "A popular garden known for its vibrant atmosphere.",
-          "opening_hours": "24 Hours"
-        },
-        {
-          "name": "Tulsi Manas Temple",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Manikarnika Ghat",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Sarnath",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Dashashwamedh Ghat",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        }
-      ]
-    },
-    {
-      "id": 13,
-      "season": "Monsoon",
-      "destination": "Lonavala, Maharashtra",
-      "places": [
-        {
-          "name": "Bhushi Dam",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Karla Caves",
-          "description": "A popular garden known for its vibrant atmosphere.",
-          "opening_hours": "24 Hours"
-        },
-        {
-          "name": "Tiger's Leap",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Lohagad Fort",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Pawna Lake",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Tiger's Leap",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        }
-      ]
-    },
-    {
-      "id": 14,
-      "season": "Monsoon",
-      "destination": "Pondicherry",
-      "places": [
-        {
-          "name": "Auroville",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Promenade Beach",
-          "description": "A popular garden known for its vibrant atmosphere.",
-          "opening_hours": "24 Hours"
-        },
-        {
-          "name": "Paradise Beach",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "French Quarter",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Arikamedu",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Mahabaleshwar Temple",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        }
-      ]
-    },
-    {
-      "id": 15,
-      "season": "Monsoon",
-      "destination": "Kumarakom, Kerala",
-      "places": [
-        {
-          "name": "Kumarakom Bird Sanctuary",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Bay Island Driftwood Museum",
-          "description": "A popular garden known for its vibrant atmosphere.",
-          "opening_hours": "24 Hours"
-        },
-        {
-          "name": "Vaikom Mahadeva Temple",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Aruvikkuzhi Waterfalls",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Kumarakom Beach",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Vembanad Lake",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        }
-      ]
-    },
-    {
-      "id": 16,
-      "season": "Monsoon",
-      "destination": "Allepey, Kerala",
-      "places": [
-        {
-          "name": "Backwaters",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Alleppey Beach",
-          "description": "A popular garden known for its vibrant atmosphere.",
-          "opening_hours": "24 Hours"
-        },
-        {
-          "name": "Krishnapuram Palace",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Ambalapuzha Sri Krishna Temple",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Saint Mary's Forane Church",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Pathiramanal Island",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        }
-      ]
-    },
-    {
-      "id": 17,
-      "season": "Monsoon",
-      "destination": "Chopta, Uttarakhand",
-      "places": [
-        {
-          "name": "Kedar Valley",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Moksha Valley",
-          "description": "A popular garden known for its vibrant atmosphere.",
-          "opening_hours": "24 Hours"
-        },
-        {
-          "name": "Sari Village",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Tungnath Temple",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Chopta Meadows",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Bugyal Meadows",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        }
-      ]
-    },
-    {
-      "id": 18,
-      "season": "Monsoon",
-      "destination": "Gangtok, Sikkim",
-      "places": [
-        {
-          "name": "MG Road",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Tashi Viewpoint",
-          "description": "A popular garden known for its vibrant atmosphere.",
-          "opening_hours": "24 Hours"
-        },
-        {
-          "name": "Rumtek Monastery",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Enchey Monastery",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Do Drul Chorten Stupa",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        },
-        {
-          "name": "Banjhakri Waterfalls",
-          "description": "A beautiful palace in Kashmir known for its architecture.",
-          "opening_hours": "09:00 AM - 05:00 PM"
-        }
-      ]
-    }
-
-    
-  ]
+  {
+    "id": 1,
+    "season": "Summer",
+    "destination": "Shimla, Himachal Pradesh",
+    "places": [
+      {
+        "name": "Mall Road",
+        "description": "A bustling shopping street with colonial architecture, offering scenic views and various shops.",
+        "opening_hours": "open 24 hours",
+        "requires_ticket": false
+      },
+      {
+        "name": "Kufri",
+        "description": "A hill station near Shimla known for its skiing, hiking, and stunning views of the Himalayas.",
+        "opening_hours": "09:00 AM - 06:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Jakhoo Temple",
+        "description": " A famous temple dedicated to Lord Hanuman, situated on Jakhoo Hill, offering panoramic views.",
+        "opening_hours": "06:00 AM - 08:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Christ Church",
+        "description": "A historic church with Neo-Gothic architecture, one of the oldest in North India.",
+        "opening_hours": "08:00 AM - 06:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Tara Devi Temple",
+        "description": "A serene temple dedicated to Goddess Tara, located on a hilltop offering tranquility and views.",
+        "opening_hours": "07:00 AM - 06:30 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "The Ridge",
+        "description": "A large open space in the heart of Shimla, offering views of the surrounding mountains and colonial architecture.",
+        "opening_hours": "open 24 hours",
+        "requires_ticket": false
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "season": "Summer",
+    "destination": "Manali, Himachal Pradesh",
+    "places": [
+      {
+        "name": "Rohtang Pass",
+        "description": "A high mountain pass known for its scenic beauty.",
+        "opening_hours": "06:00 AM - 06:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Hadimba Temple",
+        "description": "An ancient cave temple dedicated to Hadimba Devi, surrounded by cedar forests.",
+        "opening_hours": "08:00 AM - 06:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Old Manali",
+        "description": "A charming village known for its traditional Himachali architecture, cafes, and apple orchards.",
+        "opening_hours": "open 24 hours",
+        "requires_ticket": false
+      },
+      {
+        "name": "Solang Valley",
+        "description": "A valley famous for adventure sports like paragliding, zorbing, and skiing in winter.",
+        "opening_hours": "09:00 AM - 06:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Vashisht Hot Water Springs",
+        "description": "Natural hot water springs with therapeutic properties, located in the village of Vashisht.",
+        "opening_hours": "07:00 AM - 09:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Jogini Water Falls",
+        "description": "A scenic waterfall near Vashisht village, popular for treks and picnics.",
+        "opening_hours": "open 24 hours",
+        "requires_ticket": false
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "season": "Summer",
+    "destination": "Nainital, Uttarakhand",
+    "places": [
+      {
+        "name": "Naini Lake",
+        "description": "A beautiful freshwater lake in the shape of an eye, a popular spot for boating and surrounded by hills.",
+        "opening_hours": "06:00 AM - 06:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Naina Devi Temple",
+        "description": "A sacred temple dedicated to Goddess Naina Devi, located on the northern shore of Naini Lake.",
+        "opening_hours": "06:00 AM - 10:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Snow View Point",
+        "description": "A viewpoint offering stunning views of the snow-capped Himalayan ranges.",
+        "opening_hours": "10:30 AM - 05:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Nainital Zoo",
+        "description": "A high-altitude zoo that is home to several endangered species, including the snow leopard and Tibetan wolf.",
+        "opening_hours": "10:00 AM - 04:30 PM (Closed on Mondays)",
+        "requires_ticket": true
+      },
+      {
+        "name": "Sattal Lake",
+        "description": " A cluster of seven freshwater lakes, known for its natural beauty and birdwatching opportunities.",
+        "opening_hours": "open 24 hours",
+        "requires_ticket": false
+      },
+      {
+        "name": "Eco Cave Gardens",
+        "description": "A series of interconnected caves and hanging gardens, offering a fun experience for adventure lovers.",
+        "opening_hours": "09:30 AM - 05:30 PM",
+        "requires_ticket": true
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "season": "Summer",
+    "destination": "Munnar, Kerala",
+    "places": [
+      {
+        "name": "Anamudi Peak",
+        "description": "The highest peak in South India, offering trekking opportunities and breathtaking views.",
+        "opening_hours": "07:00 AM - 05:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Eravikulam National Park",
+        "description": " A wildlife park famous for the Nilgiri Tahr and the blooming of Neelakurinji flowers.",
+        "opening_hours": "07:30 AM - 04:00 PM (Closed during February-March for calving season)",
+        "requires_ticket": true
+      },
+      {
+        "name": "Kundala Lake",
+        "description": "A picturesque lake surrounded by hills, popular for boating and picnics.",
+        "opening_hours": "09:00 AM - 05:00 PM (boating hours)",
+        "requires_ticket": false
+      },
+      {
+        "name": "Attukal Waterfalls",
+        "description": "A stunning waterfall located amidst lush greenery, a popular spot for treks.",
+        "opening_hours": "open 24 hours",
+        "requires_ticket": false
+      },
+      {
+        "name": "Mattupetty Dam",
+        "description": "A concrete gravity dam known for its scenic views and boating activities.",
+        "opening_hours": "09:30 AM - 05:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Tea Gardens",
+        "description": "Expansive tea plantations, offering beautiful landscapes and insights into tea production.",
+        "opening_hours": "open 24 hours, but tea estates generally operate 9:00 AM - 4:30 PM.",
+        "requires_ticket": false
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "season": "Summer",
+    "destination": "Ladakh, Jammu and Kashmir",
+    "places": [
+      {
+        "name": "Pangong Lake",
+        "description": "A high-altitude lake known for its changing colors and stunning beauty.",
+        "opening_hours": "open 24 hours",
+        "requires_ticket": false
+      },
+      {
+        "name": "Nubra Valley",
+        "description": " A cold desert with sand dunes, known for its double-humped Bactrian camels.",
+        "opening_hours": "open 24 hours",
+        "requires_ticket": false
+      },
+      {
+        "name": "Magnetic Hill",
+        "description": "A gravity hill with an optical illusion that makes vehicles appear to roll uphill.",
+        "opening_hours": "open 24 hours",
+        "requires_ticket": false
+      },
+      {
+        "name": "Leh Palace",
+        "description": " A former royal palace offering panoramic views of the town and surrounding mountains.",
+        "opening_hours": "08:00 AM - 07:00 PM",
+        "requires_ticket": true
+      },
+      {
+        "name": "Shanti Stupa",
+        "description": "A white-domed stupa offering peace and panoramic views of the surrounding landscapes.",
+        "opening_hours": "05:00 AM - 09:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Khardung La Pass",
+        "description": " One of the highest motorable roads in the world, offering breathtaking views of the mountains.",
+        "opening_hours": "open 24 hours, but road conditions and weather dictate timing.",
+        "requires_ticket": false
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "season": "Summer",
+    "destination": "Coorg, Karnataka",
+    "places": [
+      {
+        "name": "Dubara Elephant Camp",
+        "description": "A wildlife camp offering interaction with elephants, including feeding and bathing them.",
+        "opening_hours": "08:30 AM - 11:00 AM, 04:30 PM - 05:30 PM",
+        "requires_ticket": true
+      },
+      {
+        "name": "Talacauvery",
+        "description": "The origin of the River Cauvery, situated in the Brahmagiri hills and a popular pilgrimage site.",
+        "opening_hours": "06:00 AM - 08:30 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Abbey Falls",
+        "description": "A beautiful waterfall located amidst coffee plantations and lush greenery.",
+        "opening_hours": "09:00 AM - 05:00 PM",
+        "requires_ticket": true
+      },
+      {
+        "name": "Iruppu Falls",
+        "description": "A waterfall in the Brahmagiri Range, known for its natural beauty and religious significance.",
+        "opening_hours": "06:00 AM - 06:00 PM",
+        "requires_ticket": true
+      },
+      {
+        "name": "Nagarhole National Park",
+        "description": "A wildlife sanctuary famous for its rich flora and fauna, including tigers and elephants.",
+        "opening_hours": "06:00 AM - 09:00 AM, 03:00 PM - 05:30 PM (Safari hours, closed on Tuesdays)",
+        "requires_ticket": true
+      },
+      {
+        "name": "Namdroling Monastery",
+        "description": "A Tibetan Buddhist monastery, known for its beautiful architecture and serene atmosphere.",
+        "opening_hours": "07:00 AM - 08:00 PM",
+        "requires_ticket": false
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "season": "Winter",
+    "destination": "Goa",
+    "places": [
+      {
+        "name": "Baga Beach",
+        "description": "A famous beach in North Goa, known for its vibrant nightlife, water sports, and shacks serving delicious seafood.",
+        "opening_hours": "open 24 hours",
+        "requires_ticket": false
+      },
+      {
+        "name": "Anjuna Beach",
+        "description": "Popular for its stunning sunsets, flea markets, and trance parties, Anjuna Beach offers a laid-back vibe.",
+        "opening_hours": "open 24 hours",
+        "requires_ticket": false
+      },
+      {
+        "name": "Dudhsagar Waterfalls",
+        "description": "One of India's tallest waterfalls, known for its milky white waters and stunning natural surroundings.",
+        "opening_hours": "09:00 AM - 05:00 PM",
+        "requires_ticket": true
+      },
+      {
+        "name": "Calangute Beach",
+        "description": "Known as the (Queen of Beaches), it's one of the largest and most popular beaches in Goa, attracting both locals and tourists.",
+        "opening_hours": "open 24 hours",
+        "requires_ticket": false
+      },
+      {
+        "name": "Fort Aguada",
+        "description": "A well-preserved 17th-century Portuguese fort, offering panoramic views of the Arabian Sea.",
+        "opening_hours": "09:00 AM - 05:30 PM",
+        "requires_ticket": true
+      },
+      {
+        "name": "Se Cathedral",
+        "description": "One of the largest churches in Asia, known for its Portuguese-Gothic architecture and rich history.",
+        "opening_hours": "07:30 AM - 06:00 PM",
+        "requires_ticket": false
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "season": "Winter",
+    "destination": "Jaisalmer, Rajasthan",
+    "places": [
+      {
+        "name": "Jaisalmer Fort",
+        "description": "Also known as Sonar Quila, this living fort is home to palaces, temples, and bustling markets.",
+        "opening_hours": "09:00 AM - 05:00 PM",
+        "requires_ticket": true
+      },
+      {
+        "name": "Sam Sand Dunes",
+        "description": "A popular spot for desert safaris and cultural performances, offering a true Rajasthani desert experience.",
+        "opening_hours": "24 Hours",
+        "requires_ticket": true
+      },
+      {
+        "name": "Patwon Ki Haveli",
+        "description": "A cluster of five havelis with intricate architecture, showcasing the grandeur of Jaisalmer's merchant class.",
+        "opening_hours": "09:00 AM - 05:00 PM",
+        "requires_ticket": true
+      },
+      {
+        "name": "Gadisar Lake",
+        "description": "A man-made reservoir surrounded by temples and ghats, perfect for a peaceful boat ride.",
+        "opening_hours": "08:00 AM - 07:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Bada Bagh",
+        "description": "A garden complex with royal cenotaphs, offering a serene atmosphere and stunning views of the sunset.",
+        "opening_hours": "08:00 AM - 06:00 PM",
+        "requires_ticket": true
+      },
+      {
+        "name": "Kuldhara Village",
+        "description": "A historical ghost village, known for its eerie legends and abandoned structures.",
+        "opening_hours": "09:00 AM - 06:00 PM",
+        "requires_ticket": true
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "season": "Winter",
+    "destination": "Rann of Kutch, Gujarat",
+    "places": [
+      {
+        "name": "Great Rann of Kutch",
+        "description": "The world's largest salt desert, famous for its white expanse and the Rann Utsav, a cultural festival.",
+        "opening_hours": "06:00 AM - 06:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Kutch Museum",
+        "description": "The oldest museum in Gujarat, showcasing Kutch's rich history, culture, and artifacts.",
+        "opening_hours": "10:00 AM - 05:30 PM (Closed on Wednesdays)",
+        "requires_ticket": true
+      },
+      {
+        "name": "Narayan Sarovar",
+        "description": "One of the five holy lakes in Hinduism, located near the westernmost point of India.",
+        "opening_hours": "06:00 AM - 07:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Kutch Desert Wildlife Sanctuary",
+        "description": " A vast sanctuary home to flamingos, wild asses, and other wildlife, set amidst the barren Rann.",
+        "opening_hours": "06:00 AM - 06:00 PM",
+        "requires_ticket": true
+      },
+      {
+        "name": "Prag Mahal",
+        "description": "A 19th-century palace with Gothic architecture, offering panoramic views of Bhuj from its clock tower.",
+        "opening_hours": "09:00 AM - 06:00 PM",
+        "requires_ticket": true
+      },
+      {
+        "name": "Mandvi Beach",
+        "description": "A clean and serene beach, ideal for a peaceful retreat and water sports.",
+        "opening_hours": "open 24 hours",
+        "requires_ticket": false
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "season": "Winter",
+    "destination": "Hampi, Karnataka",
+    "places": [
+      {
+        "name": "Lotus Mahal",
+        "description": "A unique blend of Islamic and Hindu architecture, this royal pavilion was used by the queens of the Vijayanagara Empire.",
+        "opening_hours": "08:00 AM - 06:00 PM",
+        "requires_ticket": true
+      },
+      {
+        "name": "Virupaksha Temple",
+        "description": "A UNESCO World Heritage Site and an ancient temple dedicated to Lord Shiva, attracting pilgrims and tourists alike..",
+        "opening_hours": "06:00 AM - 06:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Hampi Bazaar",
+        "description": "A vibrant marketplace near Virupaksha Temple, offering souvenirs, local crafts, and a glimpse into Hampi's past.",
+        "opening_hours": "06:00 AM - 09:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Matanga Hill",
+        "description": "Known for its stunning sunrise and sunset views, Matanga Hill offers panoramic vistas of Hampi's ruins.",
+        "opening_hours": "06:00 AM - 06:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Queen's Bath",
+        "description": "A royal bathing chamber with elegant Indo-Islamic architecture, located within the royal enclosure of Hampi.",
+        "opening_hours": "08:30 AM - 05:30 PM",
+        "requires_ticket": true
+      },
+      {
+        "name": "Vithala Temple",
+        "description": "Famous for its stone chariot and musical pillars, this temple is a prime example of Hampi's architectural brilliance.",
+        "opening_hours": "08:30 AM - 05:30 PM",
+        "requires_ticket": true
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "season": "Winter",
+    "destination": "Udaipur, Rajasthan",
+    "places": [
+      {
+        "name": "Lake Pichola",
+        "description": "A picturesque artificial lake, known for its boat rides, stunning views of City Palace, and the iconic Lake Palace.",
+        "opening_hours": "09:00 AM - 06:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Sajangarh Palace",
+        "description": "Perched on a hilltop, this palace offers panoramic views of Udaipur's lakes and the surrounding countryside.",
+        "opening_hours": "09:00 AM - 06:00 PM",
+        "requires_ticket": true
+      },
+      {
+        "name": "Jagdish Temple",
+        "description": "A large Hindu temple dedicated to Lord Vishnu, known for its intricate carvings and vibrant atmosphere.",
+        "opening_hours": "5:00 AM - 02:30 PM, 04:00 PM - 10:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Shilpgram",
+        "description": "A rural arts and crafts complex showcasing Rajasthani culture through exhibitions, performances, and handicrafts.",
+        "opening_hours": "11:00 AM - 07:00 PM",
+        "requires_ticket": true
+      },
+      {
+        "name": "Fateh Sagar Lake",
+        "description": "A serene lake offering boating facilities, surrounded by parks, including the beautiful Nehru Garden.",
+        "opening_hours": "08:00 AM - 06:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "City Palace",
+        "description": "One of the largest palace complexes in Rajasthan, offering a glimpse into the royal history of Udaipur through its museums and architecture.",
+        "opening_hours": "09:30 AM - 05:30 PM",
+        "requires_ticket": true
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "season": "Winter",
+    "destination": "Varanasi, Uttar Pradesh",
+    "places": [
+      {
+        "name": "Kashi Vishwanath Temple",
+        "description": "One of the most revered temples in India, dedicated to Lord Shiva and known for its spiritual significance.",
+        "opening_hours": "04:00 AM - 11:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Ramnagar Fort",
+        "description": " A 17th-century fort on the banks of the Ganges, known for its museum and historical artifacts.",
+        "opening_hours": "10:30 AM - 05:00 PM",
+        "requires_ticket": true
+      },
+      {
+        "name": "Tulsi Manas Temple",
+        "description": "A beautiful temple where the ancient Hindu epic Ramayana was written, adorned with verses from the scripture.",
+        "opening_hours": "05:30 AM - 12:00 PM, 03:30 PM - 09:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Manikarnika Ghat",
+        "description": "One of the oldest and most sacred ghats in Varanasi, associated with Hindu cremation rituals.",
+        "opening_hours": "open 24 hours",
+        "requires_ticket": false
+      },
+      {
+        "name": "Sarnath",
+        "description": " A significant Buddhist pilgrimage site where Lord Buddha delivered his first sermon, with stupas and monasteries.",
+        "opening_hours": "08:00 AM - 07:00 PM",
+        "requires_ticket": true
+      },
+      {
+        "name": "Dashashwamedh Ghat",
+        "description": "The main ghat in Varanasi, famous for the evening Ganga Aarti ceremony, which attracts crowds of devotees and tourists.",
+        "opening_hours": "open 24 hours",
+        "requires_ticket": false
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "season": "Monsoon",
+    "destination": "Lonavala, Maharashtra",
+    "places": [
+      {
+        "name": "Bhushi Dam",
+        "description": "A popular spot during the monsoon, known for its scenic beauty and the opportunity to play in the gushing waters.",
+        "opening_hours": "09:00 AM - 06:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Karla Caves",
+        "description": "Ancient Buddhist rock-cut caves famous for their grand chaitya hall and intricate carvings.",
+        "opening_hours": "09:00 AM - 05:00 PM",
+        "requires_ticket": true
+      },
+      {
+        "name": "Tiger's Leap",
+        "description": "A viewpoint offering breathtaking views of the valley below and lush green landscapes.",
+        "opening_hours": "09:00 AM - 06:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Lohagad Fort",
+        "description": "A historic fort with stunning panoramic views and ancient structures, popular for trekking.",
+        "opening_hours": "09:00 AM - 06:00 PM",
+        "requires_ticket": true
+      },
+      {
+        "name": "Pawna Lake",
+        "description": "Known for its serene environment and camping spots, ideal for a relaxing day out.",
+        "opening_hours": "09:00 AM - 06:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Shree Narayani Dham Temple",
+        "description": "Shree Narayani Dham Temple in Lonavala is a serene Hindu temple dedicated to Goddess Narayani, offering a peaceful environment for worship.",
+        "opening_hours": "06:00 AM - 08:00 PM",
+        "requires_ticket": false
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "season": "Monsoon",
+    "destination": "Pondicherry",
+    "places": [
+      {
+        "name": "Auroville",
+        "description": "An international community dedicated to human unity and peace, known for its unique architecture and serene environment.",
+        "opening_hours": "09:00 AM - 05:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Promenade Beach",
+        "description": "A popular beach known for its scenic views and peaceful atmosphere, perfect for evening walks.",
+        "opening_hours": "open 24 hours",
+        "requires_ticket": false
+      },
+      {
+        "name": "Paradise Beach",
+        "description": "A pristine and secluded beach, known for its clear waters and golden sands.",
+        "opening_hours": "09:00 AM - 05:00 PM",
+        "requires_ticket": true
+      },
+      {
+        "name": "French Quarter",
+        "description": " Known for its charming colonial architecture, cafes, and boutiques, reflecting Pondicherry’s French heritage.",
+        "opening_hours": "09:00 AM - 05:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Arikamedu",
+        "description": "An archaeological site revealing ancient Roman trade connections with India, showcasing ruins and artifacts.",
+        "opening_hours": "09:00 AM - 05:00 PM",
+        "requires_ticket": true
+      },
+      {
+        "name": "The Sacred Heart Basilicia",
+        "description": "The Sacred Heart Basilica in Pondicherry is a Gothic-style Catholic church known for its stunning stained-glass windows depicting events from the life of Jesus.",
+        "opening_hours": "07:00 AM - 06:30 PM",
+        "requires_ticket": false
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "season": "Monsoon",
+    "destination": "Kumarakom, Kerala",
+    "places": [
+      {
+        "name": "Kumarakom Bird Sanctuary",
+        "description": "A popular bird-watching destination, home to a variety of migratory and resident birds amidst lush greenery.",
+        "opening_hours": "06:00 AM - 05:00 PM",
+        "requires_ticket": true
+      },
+      {
+        "name": "Bay Island Driftwood Museum",
+        "description": "Showcases unique driftwood sculptures and art, highlighting nature's creativity.",
+        "opening_hours": "09:00 AM - 05:00 PM",
+        "requires_ticket": true
+      },
+      {
+        "name": "Vaikom Mahadeva Temple",
+        "description": "A historic temple dedicated to Lord Shiva, known for its traditional architecture and religious significance.",
+        "opening_hours": "04:00 AM - 11:00 AM, 05:00 PM - 08:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Aruvikkuzhi Waterfalls",
+        "description": "A scenic waterfall surrounded by lush greenery, offering a refreshing retreat.",
+        "opening_hours": "09:00 AM - 05:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Kumarakom Beach",
+        "description": "A serene beach known for its calm waters and beautiful sunsets, ideal for relaxation.",
+        "opening_hours": "open 24 hours",
+        "requires_ticket": false
+      },
+      {
+        "name": "Vembanad Lake",
+        "description": "The longest lake in India, famous for houseboat cruises and scenic beauty.",
+        "opening_hours": "open 24 hours",
+        "requires_ticket": false
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "season": "Monsoon",
+    "destination": "Allepey, Kerala",
+    "places": [
+      {
+        "name": "Backwaters",
+        "description": "A network of serene waterways offering houseboat cruises and a chance to experience Kerala’s rural life.",
+        "opening_hours": "open 24 hours",
+        "requires_ticket": false
+      },
+      {
+        "name": "Alleppey Beach",
+        "description": "Known for its clean sands, lighthouse, and tranquil environment, perfect for beach walks and picnics.",
+        "opening_hours": "open 24 hours",
+        "requires_ticket": false
+      },
+      {
+        "name": "Krishnapuram Palace",
+        "description": "A historic palace showcasing Kerala's traditional architecture and artifacts.",
+        "opening_hours": "09:00 AM - 05:00 PM",
+        "requires_ticket": true
+      },
+      {
+        "name": "Ambalapuzha Sri Krishna Temple",
+        "description": "Famous for its delicious 'Palpayasam' and beautiful architecture.",
+        "opening_hours": "04:00 AM - 12:00 PM, 05:00 PM - 08:00 PMM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Saint Mary's Forane Church",
+        "description": "An ancient church known for its architectural beauty and historical importance.",
+        "opening_hours": "07:00 AM - 07:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Pathiramanal Island",
+        "description": "A small island in Vembanad Lake, known for its rich flora and bird species.",
+        "opening_hours": "09:00 AM - 05:00 PM",
+        "requires_ticket": false
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "season": "Monsoon",
+    "destination": "Chopta, Uttarakhand",
+    "places": [
+      {
+        "name": "Kedar Valley",
+        "description": "Known for its scenic beauty and as a base for trekking to the Kedarnath Temple.",
+        "opening_hours": "09:00 AM - 05:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Moksha Valley",
+        "description": "A tranquil spot offering serene views and a peaceful environment.",
+        "opening_hours": "open 24 hours",
+        "requires_ticket": false
+      },
+      {
+        "name": "Sari Village",
+        "description": "A picturesque village known for its trekking routes and views of the surrounding mountains.",
+        "opening_hours": "09:00 AM - 05:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Tungnath Temple",
+        "description": "The highest Shiva temple in the world, offering a spiritual experience and stunning views of the Himalayas.",
+        "opening_hours": "06:00 AM - 07:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Chopta Meadows",
+        "description": "Expansive meadows providing stunning views and a base for trekking to Tungnath and Chandrashila.",
+        "opening_hours": "09:00 AM - 05:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Bugyal Meadows",
+        "description": "High-altitude meadows known for their lush greenery and breathtaking views.",
+        "opening_hours": "09:00 AM - 05:00 PM",
+        "requires_ticket": false
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "season": "Monsoon",
+    "destination": "Gangtok, Sikkim",
+    "places": [
+      {
+        "name": "MG Road",
+        "description": "The main street of Gangtok, lined with shops, restaurants, and vibrant activity.",
+        "opening_hours": "open 24 hours",
+        "requires_ticket": false
+      },
+      {
+        "name": "Tashi Viewpoint",
+        "description": "Offers panoramic views of the Kanchenjunga range and surrounding valleys.",
+        "opening_hours": "04:00 AM - 07:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Rumtek Monastery",
+        "description": "A significant Buddhist monastery known for its beautiful architecture and spiritual ambiance.",
+        "opening_hours": "08:00 AM - 06:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Enchey Monastery",
+        "description": "A 200-year-old monastery known for its peaceful environment and Tibetan Buddhist traditions.",
+        "opening_hours": "08:00 AM - 06:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Do Drul Chorten Stupa",
+        "description": "A prominent stupa known for its serene environment and prayer wheels.",
+        "opening_hours": "08:00 AM - 06:00 PM",
+        "requires_ticket": false
+      },
+      {
+        "name": "Banjhakri Waterfalls",
+        "description": "A picturesque waterfall surrounded by a park and landscaped gardens.",
+        "opening_hours": "08:00 AM - 06:00 PM",
+        "requires_ticket": true
+      }
+    ]
+  }
+]

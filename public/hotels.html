@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #222;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        p {
+            font-size: 18px;
+        }
+        .container {
+            padding: 20px;
+        }
+        .hotel-list {
+            margin-top: 20px;
+        }
+        .hotel {
+            background-color: #444;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            display: block;
+        }
+        .hotel-name {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .hotel-rating, .hotel-price, .hotel-address, .hotel-distance {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .amenities, .rooms {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .amenities li, .rooms li {
+            margin-left: 20px;
+        }
+        .hotel-contact, .hotel-cancellation, .hotel-check {
+            font-size: 14px;
+        }
+        .error {
+            color: red;
+        }
+        .search-form {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.search-form .form-group {
+    margin-bottom: 15px;
+}
+
+.search-form label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ccc;
+}
+
+.search-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.search-form input:focus {
+    outline: none;
+    background-color: #555;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.search-form .button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-form .button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+}
+
+.search-form .button:active {
+    transform: scale(0.98);
+}
+/* General styles for the button */
+.button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+}
+
+.button:active {
+    transform: scale(0.98);
+}
+
+/* Modal background */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Dimmed background */
+}
+
+/* Modal content box */
+.modal-content {
+    background-color: #333;
+    color: white;
+    margin: 15% auto; /* Centered vertically and horizontally */
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px; /* Limit max width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Close button */
+.close-button {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-button:hover {
+    color: #ff3333;
+}
+
+/* Input fields inside the form */
+.search-form .form-group {
+    margin-bottom: 15px;
+}
+
+.search-form label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ccc;
+}
+
+.search-form input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444;
+    color: #fff;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.search-form input:focus {
+    outline: none;
+    background-color: #555;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+.star-rating {
+    display: inline-block;
+    font-size: 24px; /* Adjust size */
+    color: #ffcc00; /* Gold color for filled stars */
+}
+
+.star {
+    display: inline-block;
+    font-size: 24px;
+}
+
+.star.filled::before {
+    content: '★'; /* Filled star */
+}
+
+.star.empty::before {
+    content: '☆'; /* Empty star */
+}
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Hotel Finder</h1>
+    <p>Find the best hotels at your favorite destinations</p>
+</header>
+
+<div class="container">
+    <!-- <button class="button" id="showHotelsBtn">Show Hotels</button> -->
+    <button id="openFormButton" class="button">Search for Hotels</button>
+
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <form id="searchForm" class="search-form">
+            <div class="form-group">
+                <label for="hotelName">Hotel Name</label>
+                <input type="text" id="hotelName" placeholder="Enter hotel name" />
+            </div>
+            <div class="form-group">
+                <label for="minRating">Min Rating</label>
+                <input type="number" id="minRating" placeholder="1-5" step="0.1" min="1" max="5" />
+            </div>
+            <div class="form-group">
+                <label for="minPrice">Min Price</label>
+                <input type="number" id="minPrice" placeholder="Min price in ₹" step="0.01" min="0" />
+            </div>
+            <div class="form-group">
+              <label for="maxPrice">Max Price</label>
+              <input type="number" id="maxPrice" placeholder="Max price in ₹" step="0.01" min="0" />
+          </div>          
+            <button type="submit" class="button">Search Hotels</button>
+        </form>
+    </div>
+</div>
+
+  
+
+    <div class="hotel-list" id="hotelList"></div>
+    <p id="errorMsg" class="error"></p>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+      const urlParams = new URLSearchParams(window.location.search);
+      const destination = urlParams.get('destination'); // Get destination from the query parameter
+
+      if (destination) {
+          fetchHotels(destination); // Fetch and display hotels automatically on page load
+      } else {
+          document.getElementById('errorMsg').textContent = 'Destination not specified in URL.';
+      }
+  });
+
+  // Get modal elements
+  const modal = document.getElementById('searchModal');
+  const openButton = document.getElementById('openFormButton');
+  const closeButton = document.querySelector('.close-button');
+
+  // Open the modal when the button is clicked
+  openButton.addEventListener('click', () => {
+      modal.style.display = 'block';
+  });
+
+  // Close the modal when the close button is clicked
+  closeButton.addEventListener('click', () => {
+      modal.style.display = 'none';
+  });
+
+  // Close the modal when clicking outside the modal content
+  window.addEventListener('click', (event) => {
+      if (event.target === modal) {
+          modal.style.display = 'none';
+      }
+  });
+
+  document.getElementById('searchForm').addEventListener('submit', function (e) {
+      e.preventDefault(); // Prevent form submission
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const destination = urlParams.get('destination');
+
+      if (!destination) {
+          document.getElementById('errorMsg').textContent = 'Destination not specified in URL.';
+          return;
+      }
+
+      // Get search form values
+      const hotelName = document.getElementById('hotelName').value;
+      const minRating = document.getElementById('minRating').value;
+      const minPrice = document.getElementById('minPrice').value;
+      const maxPrice = document.getElementById('maxPrice').value;
+
+      // Build query parameters
+      const queryParams = new URLSearchParams();
+      if (hotelName) queryParams.append('name', hotelName);
+      if (minRating) queryParams.append('minRating', minRating);
+      if (minPrice) queryParams.append('minPrice', minPrice);
+      if (maxPrice) queryParams.append('maxPrice', maxPrice);
+
+      fetchHotels(destination, queryParams.toString());
+  });
+
+  
+  function fetchHotels(destination, query = '') {
+    const hotelList = document.getElementById('hotelList');
+    const errorMsg = document.getElementById('errorMsg');
+
+    // Clear previous content
+    hotelList.innerHTML = '';
+    errorMsg.innerHTML = '';
+
+    const url = query
+        ? `http://localhost:3001/${destination}/hotels/search?${query}`
+        : `http://localhost:3001/${destination}/hotels`;
+
+   // Function to render rating stars
+function renderRating(rating) {
+    let filledStars = Math.floor(rating); // Number of filled stars
+    let halfStar = rating % 1 >= 0.5; // Half star if there's a decimal
+    let emptyStars = 5 - Math.ceil(rating); // Empty stars
+
+    let stars = '';
+
+    // Add filled stars
+    for (let i = 0; i < filledStars; i++) {
+        stars += '★'; // Filled star symbol
+    }
+
+    // Add half star if necessary
+    if (halfStar) {
+        stars += '☆'; // Half star symbol (using a different symbol to show half-filled)
+    }
+
+    // Add empty stars
+    for (let i = 0; i < emptyStars; i++) {
+        stars += '☆'; // Empty star symbol
+    }
+
+    return stars;
+}
+
+
+    fetch(url)
+        .then((response) => response.json())
+        .then((data) => {
+            if (data.length > 0) {
+                data.forEach((hotel) => {
+                    const hotelDiv = document.createElement('div');
+                    hotelDiv.classList.add('hotel');
+                    hotelDiv.innerHTML = `
+                        <div class="hotel-name">${hotel.name}</div>
+                        <div class="hotel-rating">Rating: ${renderRating(hotel.rating)} (${hotel.rating} / 5)</div>
+                        <div class="hotel-price">Price per Night: ₹${hotel.pricePerNight}</div>
+                        <div class="hotel-address">Address: ${hotel.address}</div>
+                        <div class="hotel-distance">Distance from Center: ${hotel.distanceFromCenter} km</div>
+                        
+                        <div class="amenities">
+                            <strong>Amenities:</strong>
+                            <ul>
+                                ${hotel.amenities.map((amenity) => `<li>${amenity}</li>`).join('')}
+                            </ul>
+                        </div>
+
+                        <div class="hotel-contact">
+                            <strong>Contact:</strong>
+                            <div>Phone: ${hotel.contact.phone}</div>
+                            <div>Email: ${hotel.contact.email}</div>
+                        </div>
+
+                        <div class="rooms">
+                            <strong>Rooms:</strong>
+                            <ul>
+                                ${hotel.rooms
+                                    .map(
+                                        (room) =>
+                                            `<li>Room Type: ${room.roomType} - ₹${room.price} per night - Availability: ${room.availability}</li>`
+                                    )
+                                    .join('')}
+                            </ul>
+                        </div>
+
+                        <div class="hotel-cancellation">Cancellation Policy: ${hotel.cancellationPolicy}</div>
+                        <div class="hotel-check">
+                            Check-in Time: ${hotel.checkInTime}<br>
+                            Check-out Time: ${hotel.checkOutTime}
+                        </div>
+                    `;
+                    hotelList.appendChild(hotelDiv);
+                });
+            } else {
+                errorMsg.textContent = `No hotels found for ${destination}.`;
+            }
+        })
+        .catch((error) => {
+            console.error('Error fetching hotels:', error);
+            errorMsg.textContent = `Error fetching hotels for ${destination}. Please try again later.`;
+        });
+}
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,2512 @@
+[
+    {
+    "id": 1,
+    "destinationName": "Shimla, Himachal Pradesh",
+    "name": "The Oberoi Cecil",
+    "rating": 5,
+    "distanceFromCenter": 2.0,
+    "pricePerNight": 200,
+    "address": "Chaura Maidan, Shimla, Himachal Pradesh, 171004",
+    "amenities": [
+      "WiFi",
+      "Spa",
+      "Restaurant",
+      "Bar",
+      "Gym"
+    ],
+    "contact": {
+      "phone": "+911234567890",
+      "email": "reservations@oberoicecil.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Luxury Room",
+        "price": 250,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Premier Suite",
+        "price": 400,
+        "availability": "Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 48 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "12:00"
+   },
+   {
+    "id": 2,
+    "destinationName": "Shimla, Himachal Pradesh",
+    "name": "Radisson Jass Shimla",
+    "rating": 4.5,
+    "distanceFromCenter": 3.0,
+    "pricePerNight": 180,
+    "address": "Goodwood Estate, Lower Bharari, Shimla, Himachal Pradesh, 171001",
+    "amenities": [
+      "WiFi",
+      "Pool",
+      "Restaurant",
+      "Parking",
+      "Business Center"
+    ],
+    "contact": {
+      "phone": "+911234567891",
+      "email": "contact@radissonshimla.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Standard Room",
+        "price": 180,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Executive Suite",
+        "price": 300,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 24 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 3,
+    "destinationName": "Shimla, Himachal Pradesh",
+    "name": "Wildflower Hall",
+    "rating": 5,
+    "distanceFromCenter": 8.0,
+    "pricePerNight": 350,
+    "address": "Charabra, Shimla, Himachal Pradesh, 171012",
+    "amenities": [
+      "WiFi",
+      "Infinity Pool",
+      "Spa",
+      "Restaurant",
+      "Mountain View"
+    ],
+    "contact": {
+      "phone": "+911234567892",
+      "email": "info@wildflowerhall.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Premier Room",
+        "price": 400,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Mountain Suite",
+        "price": 600,
+        "availability": "Available"
+      }
+    ],
+    "cancellationPolicy": "Non-refundable",
+    "checkInTime": "15:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 4,
+    "destinationName": "Shimla, Himachal Pradesh",
+    "name": "Hotel Prestige",
+    "rating": 3.0,
+    "distanceFromCenter": 1.8,
+    "pricePerNight": 80,
+    "address": "The Mall Road, Shimla, Himachal Pradesh, 171003",
+    "amenities": [
+      "WiFi",
+      "Restaurant",
+      "Room Service",
+      "Parking"
+    ],
+    "contact": {
+      "phone": "+911234567893",
+      "email": "info@hotelprestige.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Standard Room",
+        "price": 80,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Deluxe Room",
+        "price": 100,
+        "availability": "Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 12 hours before check-in",
+    "checkInTime": "13:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 5,
+    "destinationName": "Manali, Himachal Pradesh",
+    "name": "The Himalayan Resort & Spa",
+    "rating": 5.0,
+    "distanceFromCenter": 2.5,
+    "pricePerNight": 25000,
+    "address": "Hadimba Road, Manali, Himachal Pradesh, 175131",
+    "amenities": [
+      "WiFi",
+      "Spa",
+      "Pool",
+      "Restaurant",
+      "Mountain View"
+    ],
+    "contact": {
+      "phone": "+911234567893",
+      "email": "info@thehimalayanmanali.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Royal Suite",
+        "price": 35000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Luxury Room",
+        "price": 25000,
+        "availability": "Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 72 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "12:00"
+  },
+  {
+    "id": 6,
+    "destinationName": "Manali, Himachal Pradesh",
+    "name": "Snow Valley Resorts",
+    "rating": 4.0,
+    "distanceFromCenter": 3.0,
+    "pricePerNight": 12000,
+    "address": "Log Huts Area, Manali, Himachal Pradesh, 175131",
+    "amenities": [
+      "WiFi",
+      "Restaurant",
+      "Parking",
+      "Garden View"
+    ],
+    "contact": {
+      "phone": "+911234567894",
+      "email": "reservations@snowvalleyresorts.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Deluxe Room",
+        "price": 12000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Family Suite",
+        "price": 18000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 48 hours before check-in",
+    "checkInTime": "13:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 7,
+    "destinationName": "Manali, Himachal Pradesh",
+    "name": "Hotel Mountain Top",
+    "rating": 3.0,
+    "distanceFromCenter": 1.5,
+    "pricePerNight": 5000,
+    "address": "Near Hadimba Temple, Manali, Himachal Pradesh, 175131",
+    "amenities": [
+      "WiFi",
+      "Restaurant",
+      "Parking"
+    ],
+    "contact": {
+      "phone": "+911234567895",
+      "email": "contact@mountaintopmanali.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Standard Room",
+        "price": 5000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Superior Room",
+        "price": 7000,
+        "availability": "Available"
+      }
+    ],
+    "cancellationPolicy": "Non-refundable",
+    "checkInTime": "12:00",
+    "checkOutTime": "10:00"
+  },
+  {
+    "id": 8,
+    "destinationName": "Manali, Himachal Pradesh",
+    "name": "Hotel Pine Grove",
+    "rating": 2.0,
+    "distanceFromCenter": 4.0,
+    "pricePerNight": 2500,
+    "address": "Vashisht Road, Manali, Himachal Pradesh, 175131",
+    "amenities": [
+      "WiFi",
+      "Parking"
+    ],
+    "contact": {
+      "phone": "+911234567896",
+      "email": "info@pinegrovemanali.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Basic Room",
+        "price": 2500,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Economy Room",
+        "price": 3000,
+        "availability": "Available"
+      }
+    ],
+    "cancellationPolicy": "No cancellations allowed",
+    "checkInTime": "14:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 9,
+    "destinationName": "Nainital, Uttarakhand",
+    "name": "The Naini Retreat",
+    "rating": 5.0,
+    "distanceFromCenter": 1.2,
+    "pricePerNight": 18000,
+    "address": "Ayarpatta Slopes, Mallital, Nainital, Uttarakhand, 263001",
+    "amenities": [
+      "WiFi",
+      "Spa",
+      "Restaurant",
+      "Bar",
+      "Lake View"
+    ],
+    "contact": {
+      "phone": "+911234567897",
+      "email": "reservations@nainiretreat.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Lake View Room",
+        "price": 22000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Premium Suite",
+        "price": 30000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 48 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 10,
+    "destinationName": "Nainital, Uttarakhand",
+    "name": "Shervani Hilltop",
+    "rating": 4.0,
+    "distanceFromCenter": 2.5,
+    "pricePerNight": 12000,
+    "address": "Mallital, Nainital, Uttarakhand, 263001",
+    "amenities": [
+      "WiFi",
+      "Restaurant",
+      "Parking",
+      "Garden View",
+      "Play Area"
+    ],
+    "contact": {
+      "phone": "+911234567898",
+      "email": "info@shervanihilltop.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Deluxe Room",
+        "price": 12000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Family Suite",
+        "price": 15000,
+        "availability": "Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 24 hours before check-in",
+    "checkInTime": "13:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 11,
+    "destinationName": "Nainital, Uttarakhand",
+    "name": "Hotel Himalaya",
+    "rating": 3.0,
+    "distanceFromCenter": 1.0,
+    "pricePerNight": 8000,
+    "address": "Near High Court, Mallital, Nainital, Uttarakhand, 263001",
+    "amenities": [
+      "WiFi",
+      "Parking",
+      "Lake View"
+    ],
+    "contact": {
+      "phone": "+911234567899",
+      "email": "contact@hotelhimalaya.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Standard Room",
+        "price": 8000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Superior Room",
+        "price": 10000,
+        "availability": "Available"
+      }
+    ],
+    "cancellationPolicy": "Non-refundable",
+    "checkInTime": "12:00",
+    "checkOutTime": "10:00"
+  },
+  {
+    "id": 12,
+    "destinationName": "Nainital, Uttarakhand",
+    "name": "The Manu Maharani",
+    "rating": 5.0,
+    "distanceFromCenter": 1.5,
+    "pricePerNight": 20000,
+    "address": "The Mall, Nainital, Uttarakhand, 263001",
+    "amenities": [
+      "WiFi",
+      "Spa",
+      "Restaurant",
+      "Bar",
+      "Gym"
+    ],
+    "contact": {
+      "phone": "+911234567900",
+      "email": "reservations@manumaharani.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Luxury Room",
+        "price": 20000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Executive Suite",
+        "price": 25000,
+        "availability": "Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 72 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "12:00"
+  },
+  {
+    "id": 13,
+    "destinationName": "Munnar, Kerala",
+    "name": "The Panoramic Getaway",
+    "rating": 5.0,
+    "distanceFromCenter": 3.0,
+    "pricePerNight": 22000,
+    "address": "Chithirapuram, Munnar, Kerala, 685565",
+    "amenities": [
+      "WiFi",
+      "Infinity Pool",
+      "Spa",
+      "Restaurant",
+      "Mountain View"
+    ],
+    "contact": {
+      "phone": "+911234567901",
+      "email": "info@panoramicgetaway.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Panoramic Suite",
+        "price": 30000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Luxury Room",
+        "price": 22000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 72 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "12:00"
+  },
+  {
+    "id": 14,
+    "destinationName": "Munnar, Kerala",
+    "name": "Ragamaya Resort & Spa",
+    "rating": 4.0,
+    "distanceFromCenter": 5.0,
+    "pricePerNight": 15000,
+    "address": "View Point, Ponmudi Dam, Munnar, Kerala, 685565",
+    "amenities": [
+      "WiFi",
+      "Restaurant",
+      "Spa",
+      "Lake View",
+      "Private Pool"
+    ],
+    "contact": {
+      "phone": "+911234567902",
+      "email": "reservations@ragamaya.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Deluxe Lake View",
+        "price": 18000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Premium Suite",
+        "price": 15000,
+        "availability": "Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 48 hours before check-in",
+    "checkInTime": "13:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 15,
+    "destinationName": "Munnar, Kerala",
+    "name": "Clouds Valley Hotel",
+    "rating": 3.0,
+    "distanceFromCenter": 2.0,
+    "pricePerNight": 7000,
+    "address": "Kannan Devan Hills, Munnar, Kerala, 685612",
+    "amenities": [
+      "WiFi",
+      "Parking",
+      "Restaurant"
+    ],
+    "contact": {
+      "phone": "+911234567903",
+      "email": "contact@cloudsvalley.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Standard Room",
+        "price": 7000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Deluxe Room",
+        "price": 9000,
+        "availability": "Available"
+      }
+    ],
+    "cancellationPolicy": "Non-refundable",
+    "checkInTime": "12:00",
+    "checkOutTime": "10:00"
+  },
+  {
+    "id": 16,
+    "destinationName": "Munnar, Kerala",
+    "name": "Fragrant Nature Munnar",
+    "rating": 5.0,
+    "distanceFromCenter": 6.0,
+    "pricePerNight": 25000,
+    "address": "Bison Valley Road, Munnar, Kerala, 685612",
+    "amenities": [
+      "WiFi",
+      "Spa",
+      "Restaurant",
+      "Fitness Center",
+      "Mountain View"
+    ],
+    "contact": {
+      "phone": "+911234567904",
+      "email": "reservations@fragrantnature.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Honeymoon Suite",
+        "price": 30000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Luxury Room",
+        "price": 25000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 72 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "12:00"
+  },
+  {
+    "id": 17,
+    "destinationName": "Ladakh, Jammu and Kashmir",
+    "name": "The Grand Dragon Ladakh",
+    "rating": 5.0,
+    "distanceFromCenter": 1.5,
+    "pricePerNight": 28000,
+    "address": "Old Road, Sheynam, Leh, Ladakh, Jammu and Kashmir, 194101",
+    "amenities": [
+      "WiFi",
+      "Heated Rooms",
+      "Spa",
+      "Restaurant",
+      "Mountain View"
+    ],
+    "contact": {
+      "phone": "+911234567905",
+      "email": "info@granddragonladakh.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Deluxe Mountain View",
+        "price": 30000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Premium Suite",
+        "price": 35000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 72 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 18,
+    "destinationName": "Ladakh, Jammu and Kashmir",
+    "name": "The Zen Ladakh",
+    "rating": 4.0,
+    "distanceFromCenter": 2.0,
+    "pricePerNight": 18000,
+    "address": "Sheldan Fort Road, Leh, Ladakh, Jammu and Kashmir, 194101",
+    "amenities": [
+      "WiFi",
+      "Restaurant",
+      "Heated Pool",
+      "Fitness Center",
+      "Parking"
+    ],
+    "contact": {
+      "phone": "+911234567906",
+      "email": "reservations@zenladakh.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Standard Room",
+        "price": 18000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Executive Room",
+        "price": 22000,
+        "availability": "Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 48 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 19,
+    "destinationName": "Ladakh, Jammu and Kashmir",
+    "name": "Hotel Singge Palace",
+    "rating": 4.0,
+    "distanceFromCenter": 0.8,
+    "pricePerNight": 15000,
+    "address": "Old Road, Leh, Ladakh, Jammu and Kashmir, 194101",
+    "amenities": [
+      "WiFi",
+      "Restaurant",
+      "Garden",
+      "Parking"
+    ],
+    "contact": {
+      "phone": "+911234567907",
+      "email": "contact@singgepalace.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Deluxe Room",
+        "price": 15000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Superior Room",
+        "price": 18000,
+        "availability": "Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 24 hours before check-in",
+    "checkInTime": "13:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 20,
+    "destinationName": "Ladakh, Jammu and Kashmir",
+    "name": "Ladakh Sarai Resort",
+    "rating": 5.0,
+    "distanceFromCenter": 3.5,
+    "pricePerNight": 25000,
+    "address": "Saboo Village, Leh, Ladakh, Jammu and Kashmir, 194101",
+    "amenities": [
+      "WiFi",
+      "Eco-Friendly Cottages",
+      "Restaurant",
+      "Yoga Studio",
+      "Mountain View"
+    ],
+    "contact": {
+      "phone": "+911234567908",
+      "email": "info@ladakhsarai.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Luxury Cottage",
+        "price": 25000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Heritage Room",
+        "price": 30000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 72 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "12:00"
+  },
+  {
+    "id": 21,
+    "destinationName": "Coorg, Karnataka",
+    "name": "Evolve Back Coorg",
+    "rating": 5.0,
+    "distanceFromCenter": 7.0,
+    "pricePerNight": 35000,
+    "address": "Karadigodu Post, Siddapur, Coorg, Karnataka, 571253",
+    "amenities": [
+      "WiFi",
+      "Private Pool",
+      "Spa",
+      "Restaurant",
+      "Coffee Plantation View"
+    ],
+    "contact": {
+      "phone": "+911234567909",
+      "email": "reservations@evolveback.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Heritage Pool Villa",
+        "price": 40000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Luxury Suite",
+        "price": 35000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 72 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "12:00"
+  },
+  {
+    "id": 22,
+    "destinationName": "Coorg, Karnataka",
+    "name": "Hotel Le Coorg",
+    "rating": 3.0,
+    "distanceFromCenter": 1.5,
+    "pricePerNight": 5000,
+    "address": "Race Course Road, Madikeri, Coorg, Karnataka, 571201",
+    "amenities": [
+      "WiFi",
+      "Restaurant",
+      "Parking",
+      "Garden View"
+    ],
+    "contact": {
+      "phone": "+911234567910",
+      "email": "contact@lecoorg.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Standard Room",
+        "price": 5000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Deluxe Room",
+        "price": 7000,
+        "availability": "Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 48 hours before check-in",
+    "checkInTime": "12:00",
+    "checkOutTime": "10:00"
+  },
+  {
+    "id": 23,
+    "destinationName": "Coorg, Karnataka",
+    "name": "Coorg Jungle Camp Resort",
+    "rating": 2.0,
+    "distanceFromCenter": 10.0,
+    "pricePerNight": 3000,
+    "address": "Herur, Kushalnagar, Coorg, Karnataka, 571234",
+    "amenities": [
+      "WiFi",
+      "Restaurant",
+      "Outdoor Activities",
+      "Lake View"
+    ],
+    "contact": {
+      "phone": "+911234567911",
+      "email": "info@coorgjunglecamp.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Economy Room",
+        "price": 3000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Lake View Cottage",
+        "price": 5000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Non-refundable",
+    "checkInTime": "13:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 24,
+    "destinationName": "Coorg, Karnataka",
+    "name": "The Tamara Coorg",
+    "rating": 4.0,
+    "distanceFromCenter": 8.0,
+    "pricePerNight": 25000,
+    "address": "Kabbinakad Estate, Napoklu Nad, Coorg, Karnataka, 571212",
+    "amenities": [
+      "WiFi",
+      "Restaurant",
+      "Spa",
+      "Infinity Pool",
+      "Mountain View"
+    ],
+    "contact": {
+      "phone": "+911234567912",
+      "email": "reservations@thetamaracoorg.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Luxury Cottage",
+        "price": 25000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Premium Cottage",
+        "price": 30000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 72 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "12:00"
+  },
+  {
+    "id": 25,
+    "destinationName": "Goa",
+    "name": "The Leela Goa",
+    "rating": 5.0,
+    "distanceFromCenter": 2.0,
+    "pricePerNight": 40000,
+    "address": "Mobor, Cavelossim, Goa, 403731",
+    "amenities": [
+      "WiFi",
+      "Private Beach",
+      "Pool",
+      "Spa",
+      "Golf Course"
+    ],
+    "contact": {
+      "phone": "+911234567913",
+      "email": "reservations@theleelagoa.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Lagoon Suite",
+        "price": 45000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Luxury Villa",
+        "price": 60000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 72 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "12:00"
+  },
+  {
+    "id": 26,
+    "destinationName": "Goa",
+    "name": "Hotel Palacio de Goa",
+    "rating": 3.0,
+    "distanceFromCenter": 1.5,
+    "pricePerNight": 3000,
+    "address": "St. Inez, Panaji, Goa, 403001",
+    "amenities": [
+      "WiFi",
+      "Restaurant",
+      "Parking",
+      "City View"
+    ],
+    "contact": {
+      "phone": "+911234567914",
+      "email": "info@palaciodegoa.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Standard Room",
+        "price": 3000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Deluxe Room",
+        "price": 5000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 48 hours before check-in",
+    "checkInTime": "12:00",
+    "checkOutTime": "10:00"
+  },
+  {
+    "id": 27,
+    "destinationName": "Goa",
+    "name": "Hotel Rajdhani",
+    "rating": 2.0,
+    "distanceFromCenter": 0.5,
+    "pricePerNight": 2000,
+    "address": "Pajifond, Margao, Goa, 403601",
+    "amenities": [
+      "WiFi",
+      "Restaurant",
+      "Parking"
+    ],
+    "contact": {
+      "phone": "+911234567915",
+      "email": "contact@hotelrajdhani.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Economy Room",
+        "price": 2000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Standard Room",
+        "price": 3000,
+        "availability": "Available"
+      }
+    ],
+    "cancellationPolicy": "Non-refundable",
+    "checkInTime": "13:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 28,
+    "destinationName": "Goa",
+    "name": "The Zuri White Sands Goa Resort",
+    "rating": 4.0,
+    "distanceFromCenter": 3.0,
+    "pricePerNight": 25000,
+    "address": "Varca, Salcete, Goa, 403721",
+    "amenities": [
+      "WiFi",
+      "Beachfront",
+      "Pool",
+      "Spa",
+      "Restaurant"
+    ],
+    "contact": {
+      "phone": "+911234567916",
+      "email": "reservations@zuriwhitesands.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Deluxe Room",
+        "price": 25000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Premium Suite",
+        "price": 35000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 72 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "12:00"
+  },
+  {
+    "id": 29,
+    "destinationName": "Rann of Kutch, Gujarat",
+    "name": "The Rann Riders",
+    "rating": 5.0,
+    "distanceFromCenter": 10.0,
+    "pricePerNight": 12000,
+    "address": "Rann of Kutch, Kutch, Gujarat, 370460",
+    "amenities": [
+      "WiFi",
+      "Restaurant",
+      "Desert Safari",
+      "Cultural Shows",
+      "Camel Ride"
+    ],
+    "contact": {
+      "phone": "+911234567917",
+      "email": "reservations@rannriders.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Luxury Tent",
+        "price": 15000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Standard Tent",
+        "price": 12000,
+        "availability": "Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 48 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "12:00"
+  },
+  {
+    "id": 30,
+    "destinationName": "Rann of Kutch, Gujarat",
+    "name": "White Rann Resort",
+    "rating": 3.0,
+    "distanceFromCenter": 5.0,
+    "pricePerNight": 8000,
+    "address": "Kutch, Gujarat, 370001",
+    "amenities": [
+      "WiFi",
+      "Restaurant",
+      "Garden View",
+      "Bonfire"
+    ],
+    "contact": {
+      "phone": "+911234567918",
+      "email": "info@whiterannresort.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Deluxe Tent",
+        "price": 8000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Standard Tent",
+        "price": 6000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 24 hours before check-in",
+    "checkInTime": "12:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 31,
+    "destinationName": "Rann of Kutch, Gujarat",
+    "name": "Rann Utsav Tent City",
+    "rating": 2.0,
+    "distanceFromCenter": 7.0,
+    "pricePerNight": 5000,
+    "address": "Dhordo, Kutch, Gujarat, 370001",
+    "amenities": [
+      "WiFi",
+      "Restaurant",
+      "Cultural Programs",
+      "Camel Safari"
+    ],
+    "contact": {
+      "phone": "+911234567919",
+      "email": "contact@rannutsav.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Standard Tent",
+        "price": 5000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Luxury Tent",
+        "price": 7000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Non-refundable",
+    "checkInTime": "13:00",
+    "checkOutTime": "10:00"
+  },
+  {
+    "id": 32,
+    "destinationName": "Rann of Kutch, Gujarat",
+    "name": "Kutch Safari Resort",
+    "rating": 4.0,
+    "distanceFromCenter": 3.0,
+    "pricePerNight": 10000,
+    "address": "Rann of Kutch, Kutch, Gujarat, 370450",
+    "amenities": [
+      "WiFi",
+      "Safari",
+      "Restaurant",
+      "Swimming Pool",
+      "Outdoor Activities"
+    ],
+    "contact": {
+      "phone": "+911234567920",
+      "email": "info@kutchsafariresort.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Safari Cottage",
+        "price": 12000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Standard Tent",
+        "price": 8000,
+        "availability": "Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 72 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "12:00"
+  },
+  {
+    "id": 33,
+    "destinationName": "Hampi, Karnataka",
+    "name": "Evolve Back Hampi",
+    "rating": 5.0,
+    "distanceFromCenter": 4.0,
+    "pricePerNight": 35000,
+    "address": "Kamlapura, Hampi, Karnataka, 583221",
+    "amenities": [
+      "WiFi",
+      "Infinity Pool",
+      "Spa",
+      "Restaurant",
+      "Cultural Tours"
+    ],
+    "contact": {
+      "phone": "+911234567921",
+      "email": "reservations@evolveback.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Luxury Suite",
+        "price": 40000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Heritage Pool Villa",
+        "price": 50000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 72 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 34,
+    "destinationName": "Hampi, Karnataka",
+    "name": "Clarks Inn Hampi",
+    "rating": 3.0,
+    "distanceFromCenter": 1.0,
+    "pricePerNight": 5000,
+    "address": "Bala Bazaar Road, Hampi, Karnataka, 583239",
+    "amenities": [
+      "WiFi",
+      "Restaurant",
+      "Parking",
+      "Conference Hall"
+    ],
+    "contact": {
+      "phone": "+911234567922",
+      "email": "info@clarksinnhampi.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Standard Room",
+        "price": 5000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Deluxe Room",
+        "price": 7000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 24 hours before check-in",
+    "checkInTime": "12:00",
+    "checkOutTime": "10:00"
+  },
+  {
+    "id": 35,
+    "destinationName": "Hampi, Karnataka",
+    "name": "Padma Guest House",
+    "rating": 2.0,
+    "distanceFromCenter": 0.5,
+    "pricePerNight": 2000,
+    "address": "Janatha Plot, Hampi, Karnataka, 583239",
+    "amenities": [
+      "WiFi",
+      "Restaurant",
+      "Garden View"
+    ],
+    "contact": {
+      "phone": "+911234567923",
+      "email": "contact@padmaguesthouse.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Standard Room",
+        "price": 2000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Basic Room",
+        "price": 1500,
+        "availability": "Available"
+      }
+    ],
+    "cancellationPolicy": "Non-refundable",
+    "checkInTime": "13:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 36,
+    "destinationName": "Hampi, Karnataka",
+    "name": "Heritage Resort Hampi",
+    "rating": 4.0,
+    "distanceFromCenter": 3.5,
+    "pricePerNight": 12000,
+    "address": "48/C & 4B, Hospet, Hampi, Karnataka, 583239",
+    "amenities": [
+      "WiFi",
+      "Swimming Pool",
+      "Restaurant",
+      "Fitness Center",
+      "Cultural Activities"
+    ],
+    "contact": {
+      "phone": "+911234567924",
+      "email": "reservations@heritageresorthampi.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Deluxe Cottage",
+        "price": 15000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Standard Room",
+        "price": 12000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 48 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "12:00"
+  },
+  {
+    "id": 37,
+    "destinationName": "Udaipur, Rajasthan",
+    "name": "The Oberoi Udaivilas",
+    "rating": 5.0,
+    "distanceFromCenter": 2.0,
+    "pricePerNight": 45000,
+    "address": "Haridasji Ki Magri, Udaipur, Rajasthan, 313001",
+    "amenities": [
+      "WiFi",
+      "Spa",
+      "Swimming Pool",
+      "Lake View",
+      "Fine Dining Restaurant"
+    ],
+    "contact": {
+      "phone": "+911234567925",
+      "email": "reservations@oberoiudaivilas.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Premier Room with Pool",
+        "price": 50000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Luxury Suite",
+        "price": 75000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 72 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "12:00"
+  },
+  {
+    "id": 38,
+    "destinationName": "Udaipur, Rajasthan",
+    "name": "Hotel Hilltop Palace",
+    "rating": 3.0,
+    "distanceFromCenter": 1.0,
+    "pricePerNight": 5000,
+    "address": "Ambavgarh, Fatehsagar Lake, Udaipur, Rajasthan, 313001",
+    "amenities": [
+      "WiFi",
+      "Restaurant",
+      "Parking",
+      "Lake View"
+    ],
+    "contact": {
+      "phone": "+911234567926",
+      "email": "info@hilltoppalace.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Deluxe Room",
+        "price": 5000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Suite",
+        "price": 7000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 24 hours before check-in",
+    "checkInTime": "12:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 39,
+    "destinationName": "Udaipur, Rajasthan",
+    "name": "Hotel Udai Haveli",
+    "rating": 2.0,
+    "distanceFromCenter": 0.5,
+    "pricePerNight": 2000,
+    "address": "Ganesh Ghati, Udaipur, Rajasthan, 313001",
+    "amenities": [
+      "WiFi",
+      "Restaurant",
+      "Heritage Decor"
+    ],
+    "contact": {
+      "phone": "+911234567927",
+      "email": "contact@udaihaveli.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Standard Room",
+        "price": 2000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Basic Room",
+        "price": 1500,
+        "availability": "Available"
+      }
+    ],
+    "cancellationPolicy": "Non-refundable",
+    "checkInTime": "13:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 40,
+    "destinationName": "Udaipur, Rajasthan",
+    "name": "Trident Udaipur",
+    "rating": 4.0,
+    "distanceFromCenter": 3.0,
+    "pricePerNight": 12000,
+    "address": "Mullah Talai, Udaipur, Rajasthan, 313001",
+    "amenities": [
+      "WiFi",
+      "Swimming Pool",
+      "Restaurant",
+      "Fitness Center",
+      "Lake View"
+    ],
+    "contact": {
+      "phone": "+911234567928",
+      "email": "reservations@tridentudaipur.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Deluxe Garden View Room",
+        "price": 12000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Deluxe Lake View Room",
+        "price": 15000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 48 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "12:00"
+  },
+  {
+    "id": 41,
+    "destinationName": "Varanasi, Uttar Pradesh",
+    "name": "BrijRama Palace",
+    "rating": 5.0,
+    "distanceFromCenter": 1.0,
+    "pricePerNight": 30000,
+    "address": "Munshi Ghat, Varanasi, Uttar Pradesh, 221001",
+    "amenities": [
+      "WiFi",
+      "Heritage Decor",
+      "Fine Dining",
+      "River View",
+      "Spa"
+    ],
+    "contact": {
+      "phone": "+911234567929",
+      "email": "reservations@brijrama.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Heritage Suite",
+        "price": 35000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Premium Room",
+        "price": 30000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 72 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "12:00"
+  },
+  {
+    "id": 41,
+    "destinationName": "Varanasi, Uttar Pradesh",
+    "name": "Taj Nadesar Palace",
+    "rating": 5.0,
+    "distanceFromCenter": 2.5,
+    "pricePerNight": 35000,
+    "address": "Nadesar Palace Grounds, Varanasi, Uttar Pradesh, 221002",
+    "amenities": [
+      "WiFi",
+      "Spa",
+      "Swimming Pool",
+      "Garden View",
+      "Fine Dining Restaurant"
+    ],
+    "contact": {
+      "phone": "+911234567929",
+      "email": "reservations@tajhotels.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Heritage Suite",
+        "price": 40000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Luxury Room",
+        "price": 35000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 72 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "12:00"
+  },
+  {
+    "id": 42,
+    "destinationName": "Varanasi, Uttar Pradesh",
+    "name": "Hotel Alka",
+    "rating": 3.0,
+    "distanceFromCenter": 1.0,
+    "pricePerNight": 3000,
+    "address": "D3/23, Meer Ghat, Dashashwamedh, Varanasi, Uttar Pradesh, 221001",
+    "amenities": [
+      "WiFi",
+      "Restaurant",
+      "Ganges River View"
+    ],
+    "contact": {
+      "phone": "+911234567930",
+      "email": "info@hotelalka.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Standard Room",
+        "price": 3000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Deluxe Room",
+        "price": 4000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 24 hours before check-in",
+    "checkInTime": "12:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 43,
+    "destinationName": "Varanasi, Uttar Pradesh",
+    "name": "Shree Ganga Paying Guest House",
+    "rating": 2.0,
+    "distanceFromCenter": 0.8,
+    "pricePerNight": 1500,
+    "address": "D-17/73, Pandey Ghat, Varanasi, Uttar Pradesh, 221001",
+    "amenities": [
+      "WiFi",
+      "Basic Breakfast",
+      "Ganges River View"
+    ],
+    "contact": {
+      "phone": "+911234567931",
+      "email": "contact@shreegangaguesthouse.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Basic Room",
+        "price": 1500,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Standard Room",
+        "price": 2000,
+        "availability": "Available"
+      }
+    ],
+    "cancellationPolicy": "Non-refundable",
+    "checkInTime": "13:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 44,
+    "destinationName": "Varanasi, Uttar Pradesh",
+    "name": "BrijRama Palace",
+    "rating": 4.0,
+    "distanceFromCenter": 2.0,
+    "pricePerNight": 12000,
+    "address": "Munshi Ghat, Darbhanga Ghat, Varanasi, Uttar Pradesh, 221001",
+    "amenities": [
+      "WiFi",
+      "Restaurant",
+      "Cultural Shows",
+      "Ganges River View",
+      "Yoga Sessions"
+    ],
+    "contact": {
+      "phone": "+911234567932",
+      "email": "reservations@brijrama.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Deluxe Heritage Room",
+        "price": 12000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Suite",
+        "price": 15000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 48 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "12:00"
+  },
+  {
+    "id": 45,
+    "destinationName": "Lonavala, Maharashtra",
+    "name": "The Machan",
+    "rating": 5.0,
+    "distanceFromCenter": 5.0,
+    "pricePerNight": 25000,
+    "address": "Private Road, Atvan, Lonavala, Maharashtra, 410401",
+    "amenities": [
+      "WiFi",
+      "Eco-Friendly",
+      "Treehouse Suites",
+      "Nature Trails",
+      "Spa"
+    ],
+    "contact": {
+      "phone": "+911234567933",
+      "email": "reservations@themachan.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Canopy Machan",
+        "price": 25000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Heritage Machan",
+        "price": 30000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 72 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 46,
+    "destinationName": "Lonavala, Maharashtra",
+    "name": "Rhythm Lonavala",
+    "rating": 3.0,
+    "distanceFromCenter": 2.0,
+    "pricePerNight": 7500,
+    "address": "Bajrang Baug Garden, Tungarli, Lonavala, Maharashtra, 410403",
+    "amenities": [
+      "WiFi",
+      "Swimming Pool",
+      "Restaurant",
+      "Fitness Center"
+    ],
+    "contact": {
+      "phone": "+911234567934",
+      "email": "info@rhythmlonavala.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Deluxe Room",
+        "price": 7500,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Suite",
+        "price": 10000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 24 hours before check-in",
+    "checkInTime": "12:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 47,
+    "destinationName": "Lonavala, Maharashtra",
+    "name": "Hotel Mangal Residency",
+    "rating": 2.0,
+    "distanceFromCenter": 1.0,
+    "pricePerNight": 2000,
+    "address": "Old Mumbai-Pune Highway, Lonavala, Maharashtra, 410401",
+    "amenities": [
+      "WiFi",
+      "Parking",
+      "Basic Breakfast"
+    ],
+    "contact": {
+      "phone": "+911234567935",
+      "email": "contact@mangalresidency.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Standard Room",
+        "price": 2000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Family Room",
+        "price": 3000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Non-refundable",
+    "checkInTime": "13:00",
+    "checkOutTime": "10:00"
+  },
+  {
+    "id": 48,
+    "destinationName": "Lonavala, Maharashtra",
+    "name": "Fariyas Resort",
+    "rating": 4.0,
+    "distanceFromCenter": 2.5,
+    "pricePerNight": 12000,
+    "address": "Frichley Hills, Tungarli, Lonavala, Maharashtra, 410401",
+    "amenities": [
+      "WiFi",
+      "Swimming Pool",
+      "Indoor Games",
+      "Spa",
+      "Kids' Play Area"
+    ],
+    "contact": {
+      "phone": "+911234567936",
+      "email": "reservations@fariyas.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Deluxe Room",
+        "price": 12000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Executive Suite",
+        "price": 15000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 48 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "12:00"
+  },
+  {
+    "id": 49,
+    "destinationName": "Pondicherry",
+    "name": "La Villa",
+    "rating": 5.0,
+    "distanceFromCenter": 1.2,
+    "pricePerNight": 15000,
+    "address": "11 Rue Surcouf, White Town, Pondicherry, 605001",
+    "amenities": [
+      "WiFi",
+      "Swimming Pool",
+      "Fine Dining",
+      "Garden View",
+      "Spa"
+    ],
+    "contact": {
+      "phone": "+911234567937",
+      "email": "info@lavilla.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Luxury Suite",
+        "price": 15000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Deluxe Room",
+        "price": 13000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 72 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "12:00"
+  },
+  {
+    "id": 50,
+    "destinationName": "Pondicherry",
+    "name": "Hotel De Pondichéry",
+    "rating": 3.0,
+    "distanceFromCenter": 0.8,
+    "pricePerNight": 4000,
+    "address": "White Town, Pondicherry, 605001",
+    "amenities": [
+      "WiFi",
+      "Restaurant",
+      "Parking"
+    ],
+    "contact": {
+      "phone": "+911234567938",
+      "email": "reservations@hotelpondi.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Standard Room",
+        "price": 4000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Deluxe Room",
+        "price": 5000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 24 hours before check-in",
+    "checkInTime": "13:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 51,
+    "destinationName": "Pondicherry",
+    "name": "Seaside Guest House",
+    "rating": 2.0,
+    "distanceFromCenter": 0.5,
+    "pricePerNight": 2000,
+    "address": "5, Rue Dumas, White Town, Pondicherry, 605001",
+    "amenities": [
+      "WiFi",
+      "Basic Breakfast",
+      "Sea View"
+    ],
+    "contact": {
+      "phone": "+911234567939",
+      "email": "contact@seasideguesthouse.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Basic Room",
+        "price": 2000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Standard Room",
+        "price": 2500,
+        "availability": "Available"
+      }
+    ],
+    "cancellationPolicy": "Non-refundable",
+    "checkInTime": "12:00",
+    "checkOutTime": "10:00"
+  },
+  {
+    "id": 52,
+    "destinationName": "Pondicherry",
+    "name": "The Promenade",
+    "rating": 4.0,
+    "distanceFromCenter": 0.3,
+    "pricePerNight": 9000,
+    "address": "23, Goubert Avenue, Beach Road, Pondicherry, 605001",
+    "amenities": [
+      "WiFi",
+      "Swimming Pool",
+      "Sea View",
+      "Spa",
+      "Rooftop Dining"
+    ],
+    "contact": {
+      "phone": "+911234567940",
+      "email": "reservations@thepromenade.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Deluxe Sea View Room",
+        "price": 9000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Luxury Suite",
+        "price": 12000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 48 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "12:00"
+  },
+  {
+    "id": 53,
+    "destinationName": "Kumarakom, Kerala",
+    "name": "Kumarakom Lake Resort",
+    "rating": 5.0,
+    "distanceFromCenter": 3.5,
+    "pricePerNight": 20000,
+    "address": "Kumarakom North, Kottayam, Kerala, 686563",
+    "amenities": [
+      "WiFi",
+      "Infinity Pool",
+      "Ayurvedic Spa",
+      "Lake View",
+      "Houseboat Experiences"
+    ],
+    "contact": {
+      "phone": "+911234567941",
+      "email": "info@kumarakomlakeresort.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Luxury Pavilion Room",
+        "price": 20000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Heritage Villa",
+        "price": 25000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 72 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "12:00"
+  },
+  {
+    "id": 54,
+    "destinationName": "Kumarakom, Kerala",
+    "name": "Backwater Ripples",
+    "rating": 3.0,
+    "distanceFromCenter": 2.0,
+    "pricePerNight": 8000,
+    "address": "Kumarakom PO, Kottayam, Kerala, 686563",
+    "amenities": [
+      "WiFi",
+      "Swimming Pool",
+      "Restaurant",
+      "Backwater View"
+    ],
+    "contact": {
+      "phone": "+911234567942",
+      "email": "reservations@backwaterripples.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Deluxe Room",
+        "price": 8000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Suite Room",
+        "price": 10000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 48 hours before check-in",
+    "checkInTime": "13:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 55,
+    "destinationName": "Kumarakom, Kerala",
+    "name": "Ashirwad Heritage Resort",
+    "rating": 2.0,
+    "distanceFromCenter": 1.0,
+    "pricePerNight": 3000,
+    "address": "Chakrampady, Kumarakom, Kottayam, Kerala, 686563",
+    "amenities": [
+      "WiFi",
+      "Parking",
+      "Restaurant"
+    ],
+    "contact": {
+      "phone": "+911234567943",
+      "email": "info@ashirwadresort.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Standard Room",
+        "price": 3000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Deluxe Room",
+        "price": 4000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Non-refundable",
+    "checkInTime": "12:00",
+    "checkOutTime": "10:00"
+  },
+  {
+    "id": 56,
+    "destinationName": "Kumarakom, Kerala",
+    "name": "The Zuri Kumarakom",
+    "rating": 4.0,
+    "distanceFromCenter": 4.0,
+    "pricePerNight": 12000,
+    "address": "V-235, A1 to A54, Karottukayal, Kumarakom, Kerala, 686563",
+    "amenities": [
+      "WiFi",
+      "Swimming Pool",
+      "Spa",
+      "Backwater View",
+      "Fishing"
+    ],
+    "contact": {
+      "phone": "+911234567944",
+      "email": "reservations@thezurihotels.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Deluxe Lagoon Room",
+        "price": 12000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Presidential Suite",
+        "price": 20000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 24 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "12:00"
+  },
+  {
+    "id": 57,
+    "destinationName": "Allepey, Kerala",
+    "name": "Marari Beach Resort",
+    "rating": 5.0,
+    "distanceFromCenter": 4.0,
+    "pricePerNight": 18000,
+    "address": "Mararikulam North, Alappuzha, Kerala, 688523",
+    "amenities": [
+      "WiFi",
+      "Private Beach",
+      "Swimming Pool",
+      "Yoga Classes",
+      "Ayurvedic Spa"
+    ],
+    "contact": {
+      "phone": "+911234567945",
+      "email": "info@mararibeachresort.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Luxury Villa",
+        "price": 18000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Deluxe Villa",
+        "price": 20000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 72 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "12:00"
+  },
+  {
+    "id": 58,
+    "destinationName": "Allepey, Kerala",
+    "name": "Raheem Residency",
+    "rating": 3.0,
+    "distanceFromCenter": 1.5,
+    "pricePerNight": 5000,
+    "address": "Beach Road, Alappuzha, Kerala, 688012",
+    "amenities": [
+      "WiFi",
+      "Swimming Pool",
+      "Restaurant"
+    ],
+    "contact": {
+      "phone": "+911234567946",
+      "email": "reservations@raheemresidency.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Standard Room",
+        "price": 5000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Deluxe Room",
+        "price": 6000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 48 hours before check-in",
+    "checkInTime": "13:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 59,
+    "destinationName": "Allepey, Kerala",
+    "name": "Cosy Houseboats",
+    "rating": 2.0,
+    "distanceFromCenter": 0.5,
+    "pricePerNight": 3000,
+    "address": "Finishing Point Road, Alappuzha, Kerala, 688013",
+    "amenities": [
+      "WiFi",
+      "Basic Meals",
+      "Backwater Cruises"
+    ],
+    "contact": {
+      "phone": "+911234567947",
+      "email": "info@cosyhouseboats.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Single Bedroom Houseboat",
+        "price": 3000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Double Bedroom Houseboat",
+        "price": 4000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Non-refundable",
+    "checkInTime": "12:00",
+    "checkOutTime": "10:00"
+  },
+  {
+    "id": 60,
+    "destinationName": "Allepey, Kerala",
+    "name": "Uday Backwater Resort",
+    "rating": 4.0,
+    "distanceFromCenter": 2.5,
+    "pricePerNight": 10000,
+    "address": "Ezhupunna South, Alappuzha, Kerala, 688537",
+    "amenities": [
+      "WiFi",
+      "Swimming Pool",
+      "Spa",
+      "Backwater View",
+      "Restaurant"
+    ],
+    "contact": {
+      "phone": "+911234567948",
+      "email": "reservations@udayresort.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Deluxe Room",
+        "price": 10000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Suite",
+        "price": 15000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 24 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "12:00"
+  },
+  {
+    "id": 61,
+    "destinationName": "Chopta, Uttarakhand",
+    "name": "The Himalayan Woods",
+    "rating": 5.0,
+    "distanceFromCenter": 2.0,
+    "pricePerNight": 7000,
+    "address": "Chopta, Rudraprayag District, Uttarakhand, 246419",
+    "amenities": [
+      "WiFi",
+      "Mountain View",
+      "Bonfire Arrangements",
+      "Restaurant",
+      "Guided Trekking"
+    ],
+    "contact": {
+      "phone": "+911234567949",
+      "email": "info@himalayanwoods.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Deluxe Mountain Room",
+        "price": 7000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Premium Suite",
+        "price": 10000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 48 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 62,
+    "destinationName": "Chopta, Uttarakhand",
+    "name": "Chopta Meadows Resort",
+    "rating": 3.0,
+    "distanceFromCenter": 3.0,
+    "pricePerNight": 4000,
+    "address": "Chopta, Rudraprayag, Uttarakhand, 246419",
+    "amenities": [
+      "WiFi",
+      "Parking",
+      "Basic Meals",
+      "Trekking Assistance"
+    ],
+    "contact": {
+      "phone": "+911234567950",
+      "email": "reservations@choptameadows.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Standard Room",
+        "price": 4000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Tent Accommodation",
+        "price": 2500,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 24 hours before check-in",
+    "checkInTime": "13:00",
+    "checkOutTime": "10:00"
+  },
+  {
+    "id": 63,
+    "destinationName": "Chopta, Uttarakhand",
+    "name": "Alpine Camps Chopta",
+    "rating": 2.0,
+    "distanceFromCenter": 1.0,
+    "pricePerNight": 2500,
+    "address": "Near Tungnath Trail, Chopta, Uttarakhand, 246419",
+    "amenities": [
+      "Tent Accommodation",
+      "Basic Meals",
+      "Mountain View"
+    ],
+    "contact": {
+      "phone": "+911234567951",
+      "email": "info@alpinecamps.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Single Tent",
+        "price": 2500,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Double Tent",
+        "price": 3500,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Non-refundable",
+    "checkInTime": "12:00",
+    "checkOutTime": "09:00"
+  },
+  {
+    "id": 64,
+    "destinationName": "Chopta, Uttarakhand",
+    "name": "Snow View Resort",
+    "rating": 4.0,
+    "distanceFromCenter": 2.5,
+    "pricePerNight": 6000,
+    "address": "Dugalbitta, Chopta, Uttarakhand, 246419",
+    "amenities": [
+      "WiFi",
+      "Mountain View",
+      "Bonfire",
+      "Restaurant",
+      "Trekking Assistance"
+    ],
+    "contact": {
+      "phone": "+911234567952",
+      "email": "reservations@snowviewresort.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Deluxe Room",
+        "price": 6000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Suite",
+        "price": 8500,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 48 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 65,
+    "destinationName": "Gangtok, Sikkim",
+    "name": "The Elgin Nor-Khill",
+    "rating": 5.0,
+    "distanceFromCenter": 1.0,
+    "pricePerNight": 12000,
+    "address": "Paljor Stadium Road, Gangtok, Sikkim, 737101",
+    "amenities": [
+      "WiFi",
+      "Mountain View",
+      "Spa",
+      "Fine Dining",
+      "Garden Area"
+    ],
+    "contact": {
+      "phone": "+911234567953",
+      "email": "reservations@elginhotels.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Heritage Suite",
+        "price": 12000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Deluxe Room",
+        "price": 9000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 48 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 66,
+    "destinationName": "Gangtok, Sikkim",
+    "name": "The Keepsa Residency",
+    "rating": 3.0,
+    "distanceFromCenter": 2.5,
+    "pricePerNight": 4000,
+    "address": "Kazi Road, Gangtok, Sikkim, 737101",
+    "amenities": [
+      "WiFi",
+      "Restaurant",
+      "Bar",
+      "Parking"
+    ],
+    "contact": {
+      "phone": "+911234567954",
+      "email": "info@keepsaresidency.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Standard Room",
+        "price": 4000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Deluxe Room",
+        "price": 5000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 24 hours before check-in",
+    "checkInTime": "12:00",
+    "checkOutTime": "10:00"
+  },
+  {
+    "id": 67,
+    "destinationName": "Gangtok, Sikkim",
+    "name": "Hotel Sonam Delek",
+    "rating": 2.0,
+    "distanceFromCenter": 1.8,
+    "pricePerNight": 2500,
+    "address": "Tibet Road, Gangtok, Sikkim, 737101",
+    "amenities": [
+      "WiFi",
+      "Restaurant",
+      "Laundry Service"
+    ],
+    "contact": {
+      "phone": "+911234567955",
+      "email": "reservations@sonamdelek.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Basic Room",
+        "price": 2500,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Standard Room",
+        "price": 3000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Non-refundable",
+    "checkInTime": "13:00",
+    "checkOutTime": "10:00"
+  },
+  {
+    "id": 68,
+    "destinationName": "Gangtok, Sikkim",
+    "name": "Mayfair Spa Resort & Casino",
+    "rating": 4.0,
+    "distanceFromCenter": 5.0,
+    "pricePerNight": 8500,
+    "address": "Lower Samdur Block, Gangtok, Sikkim, 737102",
+    "amenities": [
+      "WiFi",
+      "Casino",
+      "Swimming Pool",
+      "Spa",
+      "Fine Dining"
+    ],
+    "contact": {
+      "phone": "+911234567956",
+      "email": "reservations@mayfairhotels.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Deluxe Room",
+        "price": 8500,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Suite",
+        "price": 15000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 72 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "12:00"
+  },
+  {
+    "id": 69,
+    "destinationName": "Jaisalmer, Rajasthan",
+    "name": "The Desert Palace",
+    "rating": 5.0,
+    "distanceFromCenter": 2.0,
+    "pricePerNight": 12000,
+    "address": "Sam Road, Jaisalmer, Rajasthan, 345001",
+    "amenities": [
+      "WiFi",
+      "Desert Safari",
+      "Swimming Pool",
+      "Restaurant",
+      "Bar",
+      "Camel Ride"
+    ],
+    "contact": {
+      "phone": "+911234567957",
+      "email": "reservations@desertpalace.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Luxury Tent",
+        "price": 12000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Deluxe Suite",
+        "price": 15000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 48 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 70,
+    "destinationName": "Jaisalmer, Rajasthan",
+    "name": "Jaisalmer Heritage Hotel",
+    "rating": 3.0,
+    "distanceFromCenter": 1.5,
+    "pricePerNight": 4500,
+    "address": "Fort Road, Jaisalmer, Rajasthan, 345001",
+    "amenities": [
+      "WiFi",
+      "Restaurant",
+      "Parking",
+      "Desert Tours"
+    ],
+    "contact": {
+      "phone": "+911234567958",
+      "email": "contact@jaisalmerheritage.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Standard Room",
+        "price": 4500,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Superior Room",
+        "price": 6000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 24 hours before check-in",
+    "checkInTime": "12:00",
+    "checkOutTime": "10:00"
+  },
+  {
+    "id": 71,
+    "destinationName": "Allepey, Kerala",
+    "name": "The Lake View Resort",
+    "rating": 5.0,
+    "distanceFromCenter": 4.0,
+    "pricePerNight": 8000,
+    "address": "Lake Road, Alleppey, Kerala, 688001",
+    "amenities": [
+      "WiFi",
+      "Boating",
+      "Swimming Pool",
+      "Restaurant",
+      "Spa",
+      "Bar"
+    ],
+    "contact": {
+      "phone": "+911234567959",
+      "email": "info@lakeviewresort.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Lake View Suite",
+        "price": 8000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Deluxe Room",
+        "price": 6000,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 48 hours before check-in",
+    "checkInTime": "14:00",
+    "checkOutTime": "11:00"
+  },
+  {
+    "id": 72,
+    "destinationName": "Allepey, Kerala",
+    "name": "Alleppey Houseboat",
+    "rating": 3.0,
+    "distanceFromCenter": 6.0,
+    "pricePerNight": 4000,
+    "address": "Punnamada Lake, Alleppey, Kerala, 688006",
+    "amenities": [
+      "WiFi",
+      "Boating",
+      "Fishing",
+      "Restaurant"
+    ],
+    "contact": {
+      "phone": "+911234567960",
+      "email": "reservations@alleppeyhouseboat.com"
+    },
+    "rooms": [
+      {
+        "roomType": "Houseboat Room",
+        "price": 4000,
+        "availability": "Available"
+      },
+      {
+        "roomType": "Standard Room",
+        "price": 3500,
+        "availability": "Not Available"
+      }
+    ],
+    "cancellationPolicy": "Free cancellation up to 24 hours before check-in",
+    "checkInTime": "12:00",
+    "checkOutTime": "10:00"
+  }
+  
+
+  
+
+]

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Places to Visit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+        <div class="place-bar">Places to Visit</div>
+        <div id="places-container">
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        handlePlacesPage();
+      </script>      
+
+    <!-- Add a modal for ticket booking -->
+<div id="ticket-modal" class="modal">
+    <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <h2>Book Your Ticket</h2>
+        <form id="ticket-form">
+            <label for="visitor-name">Name:</label>
+            <input type="text" id="visitor-name" placeholder="Enter your name" required>
+            <label for="visit-date">Date:</label>
+            <input type="date" id="visit-date" required>
+            <label for="num-tickets">Number of Tickets:</label>
+            <input type="number" id="num-tickets" min="1" placeholder="Enter number of tickets" required>
+            <button type="submit">Book Ticket</button>
+        </form>
+
+    </div>
+</div>                                                  
+
+</body>
+
+</html>

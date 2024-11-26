@@ -1,21 +1,30 @@
 [
-    {
-      "id": "5221",
-      "name": "SHIMLA",
-      "destinations": [
-        {
-          "id": "1",
-          "name": "abc"
-        },
-        {
-          "id": "2",
-          "name": "xyz"
-        }
-      ]
-    },
-    {
-      "id": "3471",
-      "name": "KASHMIR",
-      "destinations": []
-    }
-  ]
+  {
+    "id": "4882",
+    "name": "SHIMLA",
+    "destinations": [
+      {
+        "id": "1",
+        "name": "MG ROAD"
+      },
+      {
+        "id": "2",
+        "name": "MALL ROAD"
+      },
+      {
+        "id": "3",
+        "name": ""
+      }
+    ]
+  },
+  {
+    "id": "7125",
+    "name": "KASHMIR",
+    "destinations": []
+  },
+  {
+    "id": "8113",
+    "name": "",
+    "destinations": []
+  }
+]
