@@ -345,6 +345,21 @@ app.delete("/destinations/:destination/places/:placeName", (req, res) => {
   res.status(204).send();
 });
 
+// Retrieve places for a particular destination  //PRAGATI
+app.get("/destinations/:destination", (req, res) => {
+  const destination = req.params.destination.toLowerCase();
+  const destinations = readFile(destinationFile);
+  const placesArr = destinations.find(
+    (dest) => dest.destination.toLowerCase() === destination
+  );
+
+  if (placesArr) {
+    res.status(200).json(placesArr.places);
+  } else {
+    res.status(404).send("Destination not found.");
+  }
+});
+
 // GET /tickets - Retrieve all booked tickets
 app.get("/tickets/all", (req, res) => {
   try {
