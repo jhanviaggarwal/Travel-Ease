@@ -4,7 +4,11 @@
     "from": "Mumbai",
     "to": "Delhi",
     "date": "2024-12-01",
-    "seatsAvailable": "[object Object]1"
+    "seatsAvailable": {
+      "economy": 60,
+      "business": 25,
+      "first": 15
+    }
   },
   {
     "id": 2,
@@ -33,6 +37,17 @@
     "from": "New York",
     "to": "Los Angeles",
     "date": "2024-11-30",
+    "seatsAvailable": {
+      "economy": 50,
+      "business": 10,
+      "first": 5
+    }
+  },
+  {
+    "id": 5,
+    "from": "Delhi",
+    "to": "Mumbai",
+    "date": "2024-12-30",
     "seatsAvailable": {
       "economy": 50,
       "business": 10,

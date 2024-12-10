@@ -9,6 +9,58 @@ function handlePlacesPage() {
   }
 }
 
+let currentSlide = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.classList.toggle("active", i === index);
+  });
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}
+
+setInterval(nextSlide, 3000); // Change image every 3 seconds
+
+// Initialize dropdown menus and functionality
+function initializeMenus() {
+  // Seasons Dropdown
+  const seasonsMenu = document.getElementById("seasons-menu");
+  const seasons = ["Summer", "Winter", "Monsoon"];
+  seasons.forEach((season) => {
+    const seasonOption = document.createElement("li");
+    seasonOption.innerText = season;
+    seasonOption.onclick = () => fetchDestinations(season);
+    seasonsMenu.appendChild(seasonOption);
+  });
+
+  // Itinerary Dropdown
+  const itineraryMenu = document.getElementById("itinerary-menu");
+  const itineraryOptions = [
+    { name: "Create Your Own Itinerary", link: "itinerary.html" },
+    { name: "Pre-Made Itineraries", link: "premade.html" },
+  ];
+  itineraryOptions.forEach((option) => {
+    const itineraryOption = document.createElement("li");
+    itineraryOption.innerText = option.name;
+    itineraryOption.onclick = () => (window.location.href = option.link);
+    itineraryMenu.appendChild(itineraryOption);
+  });
+
+  // Book Dropdown
+  const bookMenu = document.getElementById("book-menu");
+  const bookOptions = [{ name: "Flight", link: "flight.html" }];
+  bookOptions.forEach((option) => {
+    const bookOption = document.createElement("li");
+    bookOption.innerText = option.name;
+    bookOption.onclick = () => (window.location.href = option.link);
+    bookMenu.appendChild(bookOption);
+  });
+}
+
 function fetchSeasons() {
   const seasons = ["Summer", "Winter", "Monsoon"];
   const seasonContainer = document.getElementById("seasons");
@@ -45,17 +97,17 @@ function fetchSeasons() {
   seasonContainer.appendChild(buttonContainer);
 }
 
+// Fetch and display destinations by season
 function fetchDestinations(season) {
-  fetch(`${baseUrl}/destination/${season}`)
+  fetch(`${baseUrl}/destination/${season.toLowerCase()}`)
     .then((response) => response.json())
     .then((destinations) => {
       const destinationContainer = document.getElementById("destinations");
+      destinationContainer.innerHTML = ""; // Clear previous destinations
 
       const titleBar = document.createElement("div");
       titleBar.className = "destination-bar";
-      titleBar.innerHTML = "<h2>Discover Your Destination</h2>";
-
-      destinationContainer.innerHTML = "";
+      titleBar.innerHTML = `<h2>${season} Destinations</h2>`;
       destinationContainer.appendChild(titleBar);
 
       const buttonContainer = document.createElement("div");
@@ -65,44 +117,35 @@ function fetchDestinations(season) {
         const div = document.createElement("div");
         div.className = "list-item";
 
-        // Image element
+        // Destination image
         const img = document.createElement("img");
-        img.src = `/assets/${destination.toLowerCase()}.jpg`; // Updated path
+        img.src = `/assets/${destination.toLowerCase()}.jpg`;
         img.alt = destination;
         img.className = "destination-image";
 
-        // Text element for the destination name
+        // Destination name
         const text = document.createElement("p");
         text.innerText = destination;
         text.className = "destination-name";
 
-        // Creating buttons for "Places to Visit" and "Hotel Recommendations"
+        // Buttons for further actions
         const placesButton = document.createElement("button");
         placesButton.className = "places-btn";
         placesButton.innerText = "Places to Visit";
+        placesButton.onclick = () =>
+          (window.location.href = `places.html?destination=${destination}`);
 
         const hotelsButton = document.createElement("button");
         hotelsButton.className = "hotels-btn";
         hotelsButton.innerText = "Hotel Recommendations";
+        hotelsButton.onclick = () =>
+          (window.location.href = `hotels.html?destination=${destination}`);
 
-        // Setting the click event for Places to Visit button
-        placesButton.onclick = () =>
-          (window.location.href = `places.html?destination=${destination}`);
-
-        // Setting the click event for Hotel Recommendations button
-        hotelsButton.onclick = () => {
-          window.location.href = `hotels.html?destination=${destination}`;
-        };
-
-        // Append the image and text to the div
         div.appendChild(img);
         div.appendChild(text);
-
-        // Append the buttons to the div
         div.appendChild(placesButton);
         div.appendChild(hotelsButton);
 
-        // Append the div to the button container
         buttonContainer.appendChild(div);
       });
 
@@ -112,6 +155,10 @@ function fetchDestinations(season) {
       console.error("Error fetching destinations:", error);
     });
 }
+
+document.getElementById("weather-btn").onclick = () => {
+  window.location.href = "weather.html";
+};
 
 function fetchPlaces(destination) {
   fetch(`${baseUrl}/destinations/${destination}`)
@@ -138,7 +185,9 @@ function fetchPlaces(destination) {
         hours.innerText = `Opening Hours: ${place.opening_hours}`;
 
         const ticketInfo = document.createElement("p");
-        ticketInfo.innerText = place.requires_ticket ? "" : "No ticket is required.";
+        ticketInfo.innerText = place.requires_ticket
+          ? ""
+          : "No ticket is required.";
 
         div.appendChild(img);
         div.appendChild(title);
@@ -155,7 +204,8 @@ function fetchPlaces(destination) {
           const updateButton = document.createElement("button");
           updateButton.innerText = "Update Ticket";
           updateButton.className = "update-button";
-          updateButton.onclick = () => openTicketModal(destination, place, true);
+          updateButton.onclick = () =>
+            openTicketModal(destination, place, true);
           div.appendChild(updateButton);
 
           const cancelButton = document.createElement("button");
@@ -212,7 +262,12 @@ function cancelTicket(destination, placeName) {
     });
 }
 
-function openTicketModal(destination, place, isUpdate = false, ticketId = null) {
+function openTicketModal(
+  destination,
+  place,
+  isUpdate = false,
+  ticketId = null
+) {
   const modal = document.getElementById("ticket-modal");
   modal.style.display = "block";
 
@@ -236,17 +291,17 @@ function openTicketModal(destination, place, isUpdate = false, ticketId = null) 
     if (!ticketIdContainer) {
       ticketIdContainer = document.createElement("div");
       ticketIdContainer.id = "ticket-id-container";
-      
+
       const ticketIdLabel = document.createElement("label");
       ticketIdLabel.htmlFor = "ticket-id";
       ticketIdLabel.textContent = "Ticket ID:";
-      
+
       const ticketIdField = document.createElement("input");
       ticketIdField.id = "ticket-id";
       ticketIdField.type = "text";
       ticketIdField.placeholder = "Enter your Ticket ID";
       ticketIdField.required = true;
-      
+
       ticketIdContainer.appendChild(ticketIdLabel);
       ticketIdContainer.appendChild(ticketIdField);
       ticketForm.insertBefore(ticketIdContainer, ticketForm.firstChild);
@@ -262,7 +317,7 @@ function openTicketModal(destination, place, isUpdate = false, ticketId = null) 
     }
   }
 
-  // Close modal on clicking 'x'  
+  // Close modal on clicking 'x'
   document.getElementById("close-modal").onclick = () => {
     modal.style.display = "none";
   };
@@ -281,7 +336,9 @@ function openTicketModal(destination, place, isUpdate = false, ticketId = null) 
     const selectedDate = new Date(visitDate);
 
     if (selectedDate < today.setHours(0, 0, 0, 0)) {
-      alert("You cannot book a ticket for a past date. Please select a valid date.");
+      alert(
+        "You cannot book a ticket for a past date. Please select a valid date."
+      );
       return;
     }
 
@@ -323,7 +380,9 @@ function bookTicket(ticketData) {
     .then((response) => response.json())
     .then((data) => {
       if (data.ticketId) {
-        alert(`Ticket booked successfully! Your Ticket ID is: ${data.ticketId}`);
+        alert(
+          `Ticket booked successfully! Your Ticket ID is: ${data.ticketId}`
+        );
       } else {
         alert("Failed to book the ticket. Please try again.");
       }
@@ -376,172 +435,184 @@ document.getElementById("weather-btn").onclick = () => {
 
 // Initialize chatbot functionality
 function initializeChatbot() {
-    const chatbotToggle = document.getElementById("chatbot-toggle");
-    const chatbotWindow = document.getElementById("chatbot-window");
-    const chatbotInput = document.getElementById("chatbot-input");
-    const chatbotMessages = document.getElementById("chatbot-messages");
-    const chatbotSend = document.getElementById("chatbot-send");
-    const chatbotClose = document.getElementById("chatbot-close");
+  const chatbotToggle = document.getElementById("chatbot-toggle");
+  const chatbotWindow = document.getElementById("chatbot-window");
+  const chatbotInput = document.getElementById("chatbot-input");
+  const chatbotMessages = document.getElementById("chatbot-messages");
+  const chatbotSend = document.getElementById("chatbot-send");
+  const chatbotClose = document.getElementById("chatbot-close");
 
-    // Initially hide the chatbot window
-    chatbotWindow.style.display = 'none';
+  chatbotToggle.addEventListener("click", () => {
+    chatbotWindow.classList.toggle("active");
+  });
 
-    // Welcome message and suggestions
-    addBotMessage(
-        "Hello! I'm your TravelEase assistant. I can help you with travel planning, destinations, accommodations, activities, weather, flights, and more. Feel free to ask any questions!"
-    );
-    addSuggestedQuestions();
+  chatbotClose.addEventListener("click", () => {
+    chatbotWindow.classList.remove("active");
+  });
 
-    // Toggle chatbot visibility on button click
-    chatbotToggle.onclick = () => {
-        if (chatbotWindow.style.display === 'none') {
-            chatbotWindow.style.display = 'block';
-        } else {
-            chatbotWindow.style.display = 'none';
-        }
-    };
+  // Initially hide the chatbot window
+  chatbotWindow.style.display = "none";
 
-    // Close chatbot window when the close button is clicked
-    chatbotClose.onclick = () => {
-        chatbotWindow.style.display = 'none';
-    };
+  // Welcome message and suggestions
+  addBotMessage(
+    "Hello! I'm your TravelEase assistant. I can help you with travel planning, destinations, accommodations, activities, weather, flights, and more. Feel free to ask any questions!"
+  );
+  addSuggestedQuestions();
 
-    // Handle send button click
-    chatbotSend.onclick = () => sendMessage();
-
-    // Handle Enter key press
-    chatbotInput.addEventListener('keypress', (e) => {
-        if (e.key === 'Enter') {
-            sendMessage();
-        }
-    });
-
-    // Send message function
-    function sendMessage() {
-        const message = chatbotInput.value.trim();
-        if (!message) return;
-
-        // Display user's message
-        addUserMessage(message);
-        chatbotInput.value = "";
-
-        // Fetch response from backend
-        fetch(`${baseUrl}/chatbot`, {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ message }),
-        })
-            .then((response) => response.json())
-            .then((data) => {
-                addBotMessage(data.response);
-            })
-            .catch((error) => {
-                console.error("Chatbot error:", error);
-                addBotMessage("Oops! Something went wrong. Please try again later.");
-            });
+  // Toggle chatbot visibility on button click
+  chatbotToggle.onclick = () => {
+    if (chatbotWindow.style.display === "none") {
+      chatbotWindow.style.display = "block";
+    } else {
+      chatbotWindow.style.display = "none";
     }
+  };
+
+  // Close chatbot window when the close button is clicked
+  chatbotClose.onclick = () => {
+    chatbotWindow.style.display = "none";
+  };
+
+  // Handle send button click
+  chatbotSend.onclick = () => sendMessage();
+
+  // Handle Enter key press
+  chatbotInput.addEventListener("keypress", (e) => {
+    if (e.key === "Enter") {
+      sendMessage();
+    }
+  });
+
+  // Send message function
+  function sendMessage() {
+    const message = chatbotInput.value.trim();
+    if (!message) return;
+
+    // Display user's message
+    addUserMessage(message);
+    chatbotInput.value = "";
+
+    // Fetch response from backend
+    fetch(`${baseUrl}/chatbot`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        addBotMessage(data.response);
+      })
+      .catch((error) => {
+        console.error("Chatbot error:", error);
+        addBotMessage("Oops! Something went wrong. Please try again later.");
+      });
+  }
 }
 
 // Add user message to the chat window
 function addUserMessage(message) {
-    const userMessage = document.createElement("div");
-    userMessage.className = "chat-message user";
-    userMessage.innerText = message;
-    document.getElementById("chatbot-messages").appendChild(userMessage);
-    scrollToBottom();
+  const userMessage = document.createElement("div");
+  userMessage.className = "chat-message user";
+  userMessage.innerText = message;
+  document.getElementById("chatbot-messages").appendChild(userMessage);
+  scrollToBottom();
 }
 
 // Add bot message to the chat window
 function addBotMessage(message) {
-    const botMessage = document.createElement("div");
-    botMessage.className = "chat-message bot";
-    botMessage.innerText = message;
-    document.getElementById("chatbot-messages").appendChild(botMessage);
-    scrollToBottom();
+  const botMessage = document.createElement("div");
+  botMessage.className = "chat-message bot";
+  botMessage.innerText = message;
+  document.getElementById("chatbot-messages").appendChild(botMessage);
+  scrollToBottom();
 }
 
 // Suggested questions for user
 function addSuggestedQuestions() {
-    const suggestedQuestionsDiv = document.createElement("div");
-    suggestedQuestionsDiv.className = "suggested-questions";
-    const suggestedQuestions = [
-        "What are the best destinations for monsoon?",
-        "Tell me about Eravikulam National Park",
-        "I want to visit Goa",
-        "What's the weather in Udaipur?",
-        "Help me find a flight to Goa"
-    ];
+  const suggestedQuestionsDiv = document.createElement("div");
+  suggestedQuestionsDiv.className = "suggested-questions";
+  const suggestedQuestions = [
+    "What are the best destinations for monsoon?",
+    "Tell me about Eravikulam National Park",
+    "I want to visit Goa",
+    "What's the weather in Udaipur?",
+    "Help me find a flight to Goa",
+  ];
 
-    suggestedQuestions.forEach((question) => {
-        const button = document.createElement("button");
-        button.className = "suggested-question";
-        button.innerText = question;
-        button.onclick = () => {
-            addUserMessage(question);
-            fetch(`${baseUrl}/chatbot`, {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ message: question }),
-            })
-                .then((response) => response.json())
-                .then((data) => {
-                    addBotMessage(data.response);
-                })
-                .catch((error) => {
-                    console.error("Chatbot error:", error);
-                    addBotMessage("Oops! Something went wrong. Please try again later.");
-                });
-        };
-        suggestedQuestionsDiv.appendChild(button);
-    });
+  suggestedQuestions.forEach((question) => {
+    const button = document.createElement("button");
+    button.className = "suggested-question";
+    button.innerText = question;
+    button.onclick = () => {
+      addUserMessage(question);
+      fetch(`${baseUrl}/chatbot`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: question }),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          addBotMessage(data.response);
+        })
+        .catch((error) => {
+          console.error("Chatbot error:", error);
+          addBotMessage("Oops! Something went wrong. Please try again later.");
+        });
+    };
+    suggestedQuestionsDiv.appendChild(button);
+  });
 
-    document.getElementById("chatbot-messages").appendChild(suggestedQuestionsDiv);
+  document
+    .getElementById("chatbot-messages")
+    .appendChild(suggestedQuestionsDiv);
 }
 
 // Scroll chat window to the bottom
 function scrollToBottom() {
-    const messages = document.getElementById("chatbot-messages");
-    messages.scrollTop = messages.scrollHeight;
+  const messages = document.getElementById("chatbot-messages");
+  messages.scrollTop = messages.scrollHeight;
 }
 
 // Initialize seasons on the page
 function fetchSeasons() {
-    const seasons = ["Summer", "Winter", "Monsoon"];
-    const seasonContainer = document.getElementById("seasons");
+  const seasons = ["Summer", "Winter", "Monsoon"];
+  const seasonContainer = document.getElementById("seasons");
 
-    const bar = document.createElement("div");
-    bar.className = "season-bar";
-    bar.innerHTML = "<h2>Explore the Seasons</h2>";
-    seasonContainer.appendChild(bar);
+  const bar = document.createElement("div");
+  bar.className = "season-bar";
+  bar.innerHTML = "<h2>Explore the Seasons</h2>";
+  seasonContainer.appendChild(bar);
 
-    const buttonContainer = document.createElement("div");
-    buttonContainer.className = "season-button-container";
+  const buttonContainer = document.createElement("div");
+  buttonContainer.className = "season-button-container";
 
-    seasons.forEach((season) => {
-        const div = document.createElement("div");
-        div.className = "season-item";
+  seasons.forEach((season) => {
+    const div = document.createElement("div");
+    div.className = "season-item";
 
-        const image = document.createElement("img");
-        image.src = `/assets/${season.toLowerCase()}1.jpg`; // Updated path
-        image.className = "season-image";
+    const image = document.createElement("img");
+    image.src = `/assets/${season.toLowerCase()}1.jpg`; // Updated path
+    image.className = "season-image";
 
-        const name = document.createElement("div");
-        name.className = "season-name";
-        name.innerText = season.charAt(0).toUpperCase() + season.slice(1);
+    const name = document.createElement("div");
+    name.className = "season-name";
+    name.innerText = season.charAt(0).toUpperCase() + season.slice(1);
 
-        div.appendChild(image);
-        div.appendChild(name);
+    div.appendChild(image);
+    div.appendChild(name);
 
-        div.onclick = () => (window.location.href = `destinations.html?season=${season}`);
+    div.onclick = () =>
+      (window.location.href = `destinations.html?season=${season}`);
 
-        buttonContainer.appendChild(div);
-    });
+    buttonContainer.appendChild(div);
+  });
 
-    seasonContainer.appendChild(buttonContainer);
+  seasonContainer.appendChild(buttonContainer);
 }
 
 // Initialize when the page loads
 document.addEventListener("DOMContentLoaded", () => {
-    initializeChatbot();
-    fetchSeasons();
+  initializeChatbot();
+  fetchSeasons();
+  initializeMenus();
 });

@@ -1,117 +1,91 @@
 const express = require("express");
-const fs = require("fs");
-const path = require("path");
+const mongoose = require("mongoose");
 const router = express.Router();
 
 router.use(express.json());
 
-const premadeFile = path.join(__dirname, "premadeItineraries.json");
-const savedFile = path.join(__dirname, "saveditineraries.json");
+// Define schemas and models
+const itinerarySchema = new mongoose.Schema({
+  season: String,
+  totalBudget: Number,
+  duration: Number,
+  title: String, 
+});
+const premadeItineraryModel = mongoose.model("PremadeItinerary",itinerarySchema);
+
+const savedItinerarySchema = new mongoose.Schema({
+  id: Number,
+  name: String,
+  season: String,
+  totalBudget: Number,
+  duration: Number,
+  dayWisePlan: Object, 
+  hotelRecommendations: [String], 
+  flightRecommendations: [String],
+  description: String,
+});
+
+const savedItineraryModel = mongoose.model("SavedItinerary",savedItinerarySchema);
 
 // Route to get pre-made itineraries based on filters
-router.post("/api/filter", (req, res) => {
-  const { season, totalBudget, duration } = req.body || {};
+router.post("/api/filter", async (req, res) => {
+  try {
+    const { season, totalBudget, duration } = req.body || {};
 
-  fs.readFile(premadeFile, "utf8", (err, data) => {
-    if (err) {
-      return res.status(500).json({ error: "Error reading data" });
-    }
+    const filter = {};
+    if (season) filter.season = season;
+    if (totalBudget) filter.totalBudget = { $lte: totalBudget };
+    if (duration) filter.duration = { $lte: duration };
 
-    const itineraries = JSON.parse(data);
+    const itineraries = await premadeItineraryModel.find(filter).lean();
+    res.json(itineraries);
 
-    const filtered = itineraries
-      .map((itinerary, index) => {
-        return { id: index + 1, ...itinerary };
-      })
-      .filter((itinerary) => {
-        const seasonMatch = !season || itinerary.season === season;
-        const budgetMatch =
-          !totalBudget || itinerary.totalBudget <= totalBudget;
-        const durationMatch = !duration || itinerary.duration <= duration;
-
-        return seasonMatch && budgetMatch && durationMatch;
-      });
-
-    res.json(filtered);
-  });
+  } catch (error) {
+    res.status(500).json({ error: "Error fetching data" });
+  }
 });
-router.post("/api/save", (req, res) => {
-  const { id } = req.body;
 
-  fs.readFile(premadeFile, "utf8", (err, data) => {
-    if (err) {
-      return res.status(500).json({ error: "Error reading pre-made itineraries" });
+//ROUTE TO SAVE AN ITINERARY
+router.post("/api/save", async (req, res) => {
+  try {
+    const { id } = req.body;
+
+    const itineraryToSave = await premadeItineraryModel.findOne({ id }).lean();
+    if (!itineraryToSave) {return res.status(404).json({ error: "Itinerary not found in pre-made itineraries" });
     }
 
-    const itineraries = JSON.parse(data);
-    const itineraryToSave = itineraries.find((itinerary, index) => index + 1 === id);
-
-    if (!itineraryToSave) {
-      return res.status(404).json({ error: "Itinerary not found in pre-made itineraries" });
+    const existingItinerary = await savedItineraryModel.findOne({ id });
+    if (existingItinerary) {return res.status(400).json({ error: "Itinerary with this ID is already saved" });
     }
-    const itineraryWithId = { id, ...itineraryToSave };
 
-    fs.readFile(savedFile, "utf8", (err, savedData) => {
-      if (err && err.code !== "ENOENT") {
-        return res.status(500).json({ error: "Error reading saved itineraries" });
-      }
+    const savedItinerary = new savedItineraryModel(itineraryToSave);
+    await savedItinerary.save();
 
-      const savedItineraries = JSON.parse(savedData || "[]");
-      const existingItinerary = savedItineraries.find((itinerary) => itinerary.id === id);
-      if (existingItinerary) {
-        return res.status(400).json({ error: "Itinerary with this ID is already saved" });
-      }
-
-      savedItineraries.push(itineraryWithId);
-
-      fs.writeFile(
-        savedFile,
-        JSON.stringify(savedItineraries, null, 2),
-        (err) => {
-          if (err) {
-            return res.status(500).json({ error: "Error saving itinerary" });
-          }
-          res.json({ message: "Itinerary saved successfully", itinerary: itineraryWithId });
-        }
-      );
-    });
-  });
+    res.json({message: "Itinerary saved successfully",itinerary: savedItinerary,});
+  } catch (error) {
+    console.error("Error saving itinerary:", error); 
+    res.status(500).json({ error: "Error saving itinerary" });
+  }
 });
 
 // Route to customize and update an itinerary
-router.put("/api/update", (req, res) => {
-  const { id, updatedItinerary } = req.body;
-
-  fs.readFile(savedFile, "utf8", (err, data) => {
-    if (err) {
-      return res.status(500).json({ error: "Error reading saved itineraries" });
-    }
-
-    const savedItineraries = JSON.parse(data || "[]");
-    const itineraryIndex = savedItineraries.findIndex(
-      (itinerary) => itinerary.id === id
+router.put("/api/update", async (req, res) => {
+  try {
+    const { id, updatedItinerary } = req.body; 
+    const updated = await savedItineraryModel.findOneAndUpdate(
+      { id },
+      { $set: updatedItinerary },
+      { new: true }
     );
 
-    if (itineraryIndex === -1) {
+    if (!updated) {
       return res.status(404).json({ error: "Itinerary not found" });
     }
 
-    savedItineraries[itineraryIndex] = {
-      ...savedItineraries[itineraryIndex],
-      ...updatedItinerary,
-    };
-
-    fs.writeFile(
-      savedFile,
-      JSON.stringify(savedItineraries, null, 2),
-      (err) => {
-        if (err) {
-          return res.status(500).json({ error: "Error updating itinerary" });
-        }
-        res.json({ message: "Itinerary updated successfully" });
-      }
-    );
-  });
+    res.json({ message: "Itinerary updated successfully", itinerary: updated });
+  } catch (error) {
+    res.status(500).json({ error: "Error updating itinerary" });
+  }
 });
 
 module.exports = router;

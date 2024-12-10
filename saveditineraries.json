@@ -1,39 +1,5 @@
 [
   {
-    "id": 9,
-    "name": "Winter Adventure in Rishikesh",
-    "season": "winter",
-    "totalBudget": 13000,
-    "duration": 4,
-    "dayWisePlan": {
-      "Day 1": [
-        "Arrival in Rishikesh",
-        "Yoga at Parmarth Niketan"
-      ],
-      "Day 2": [
-        "Visit Lakshman Jhula",
-        "Rafting on the Ganges"
-      ],
-      "Day 3": [
-        "Explore Neelkanth Mahadev Temple",
-        "Trekking to Kunjapuri Temple"
-      ],
-      "Day 4": [
-        "Departure from Rishikesh"
-      ]
-    },
-    "hotelRecommendations": [
-      "The Glasshouse on the Ganges",
-      "Aloha on the Ganges",
-      "Ganga Kinare"
-    ],
-    "flightRecommendations": [
-      "Delhi to Dehradun (Flight #233)",
-      "Dehradun to Delhi (Flight #444)"
-    ],
-    "description": "Rishikesh is a great winter destination for yoga, spirituality, and adventure sports."
-  },
-  {
     "id": 8,
     "name": "Christmas Vacation in Shimla",
     "season": "winter",

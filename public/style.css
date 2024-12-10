@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color:#e6f7ff; /* Light blue shade */;
 }
 
 /* Remove parallax effects or unnecessary scrolling */
@@ -30,10 +30,9 @@ body {
 
 /* Pragati*/
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    text-align: center;
+    background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 2rem;
 }
 
 main {
@@ -192,10 +191,10 @@ main {
     width: 100%;
     height: 180px;
     object-fit: cover;
-    /* to cover the entire button with the image */
+
     display: block;
     margin-bottom: 10px;
-    /*Add space between the image and text*/
+  
 }
 
 .place-item h2,
@@ -374,7 +373,7 @@ footer {
     display: block;
 }
 
-/*Text under the image*/
+
 .destination-name {
     margin: 10px 0;
     font-size: 18px;
@@ -731,3 +730,239 @@ button {
     transform: scale(1.05); /* Slightly enlarge the button */
 }
 
+.text-button-container {
+    display: flex;
+    align-items: center; /* Center-align items vertically */
+    justify-content: center; /* Center-align items horizontally */
+    margin: 20px 0; /* Add some vertical margin */
+}
+
+/* Style for the text before the buttons */
+.text-before-buttons {
+    font-family: 'Arial', sans-serif; /* Same font style as the rest of the text */
+    font-size: 18px; /* Adjust font size as needed */
+    font-weight: bold; /* Make text bold */
+    color: white; /* White text color */
+    background-color: #333; /* Background color */
+    padding: 15px; /* Add some padding around the text */
+    border-radius: 5px; /* Rounded corners for a softer look */
+    text-align: center; /* Center-align the text */
+    margin-right: 20px; /* Space between text and button */
+    flex: 1; /* Allow the text to take up available space */
+}
+
+/* Footer Container */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Equal space between columns */
+  align-items: center; /* Vertically align the items */
+}
+
+/* Footer Columns */
+.footer-column {
+  flex: 1; /* Equal width for each column */
+  padding: 10px;
+}
+
+/* Left Alignment for About Us */
+.footer-container .footer-column:nth-child(1) {
+  text-align: left;
+}
+
+/* Center Alignment for Quick Links */
+.footer-container .footer-column:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+}
+
+/* Right Alignment for Contact Us */
+.footer-container .footer-column:nth-child(3) {
+  text-align: right;
+}
+
+/* Footer Text Styling */
+.footer-column h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #121111;
+}
+
+.footer-column p,
+.footer-column ul {
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 5px 0; /* Add space between paragraphs */
+}
+
+/* Main Content */
+main {
+  flex: 1; /* Ensures the main section stretches to fill available space */
+  padding: 20px;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Style for the header and the navigation links */
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 2rem;
+  }  
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Flexbox to display items horizontally */
+  justify-content: center; /* Center the links horizontally */
+  gap: 1 rem; /* Space between the links */
+}
+
+.nav-links li {
+    position: relative;
+    padding: 15px 25px;
+    background-color: #54b8f2;
+    color: rgb(27, 26, 26);
+    margin-right: 20px; 
+    flex: 0.1;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.nav-links li:hover {
+    background-color: #c5d1e1;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    list-style: none;
+    padding: 5px 0;
+    margin: 0;
+    background-color: #54b8f2;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(81, 180, 243, 0.2);
+    z-index: 1000;
+    width: 150px; /* Adjust width as needed */
+  }
+  
+  .dropdown-menu li {
+    padding: 10px 15px;
+    background-color: white;
+    color: #333;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-menu li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Show the dropdown on hover */
+  .nav-links li:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Optional: Ensure a smooth animation for the dropdown */
+  .dropdown-menu {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav-links li:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+.header-button {
+  color:#0077cc; /* Set text color to white */
+  font-weight: bold;
+  text-decoration: none; /* Remove underline */
+  padding: 10px 20px; /* Add padding for clickable area */
+  background-color: #654caf; /* Button background color */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.header-button:hover {
+  background-color: #654caf; /* Darken the background on hover */
+}
+
+.home-page {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0077cc;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+  }
+  
+  .intro-text {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .slideshow {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .slide {
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+  
+  .slide.active {
+    display: block;
+  }
+  
+  .large-footer {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    text-align: left;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+   .footer-column p {
+    font-size: 0.9rem;
+    color: #555;
+  }

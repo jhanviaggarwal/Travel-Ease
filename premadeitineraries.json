@@ -1,5 +1,6 @@
 [
     {
+      "id" : 1,
       "name": "Summer Trip to Shimla",
       "season": "summer",
       "totalBudget": 10000,
@@ -23,6 +24,7 @@
       "description": "Shimla, the Queen of Hills, offers scenic views, colonial charm, and a relaxing retreat from city life."
     },
     {
+      "id" : 2,
       "name": "Beach Getaway to Goa",
       "season": "summer",
       "totalBudget": 20000,
@@ -48,6 +50,7 @@
       "description": "Goa offers a beautiful combination of beaches, history, and vibrant nightlife perfect for a summer retreat."
     },
     {
+      "id": 3,
       "name": "Adventure Tour to Manali",
       "season": "summer",
       "totalBudget": 15000,
@@ -75,6 +78,7 @@
       "description": "Manali is a top summer destination for adventure lovers, offering thrilling activities like skiing, paragliding, and mountain biking."
     },
     {
+      "id": 4,
       "name": "Historical Tour to Delhi and Agra",
       "season": "summer",
       "totalBudget": 12000,
@@ -98,6 +102,7 @@
       "description": "A cultural and historical journey through India's capital and the iconic city of Agra, home to the magnificent Taj Mahal."
     },
     {
+      "id": 5,
       "name": "Luxury Vacation in Udaipur",
       "season": "summer",
       "totalBudget": 25000,
@@ -105,7 +110,10 @@
       "dayWisePlan": {
         "Day 1": ["Arrival in Udaipur", "Visit City Palace"],
         "Day 2": ["Boat ride on Lake Pichola", "Visit Jag Mandir"],
-        "Day 3": ["Visit Sajjangarh Monsoon Palace", "Explore Fateh Sagar Lake"],
+        "Day 3": [
+          "Visit Sajjangarh Monsoon Palace",
+          "Explore Fateh Sagar Lake"
+        ],
         "Day 4": ["Departure from Udaipur"]
       },
       "hotelRecommendations": [
@@ -120,6 +128,7 @@
       "description": "Udaipur, known as the Venice of the East, offers majestic palaces, tranquil lakes, and romantic experiences perfect for summer."
     },
     {
+      "id": 6,
       "name": "Winter Expedition in Leh-Ladakh",
       "season": "winter",
       "totalBudget": 18000,
@@ -146,6 +155,7 @@
       "description": "Leh-Ladakh is a winter wonderland, offering incredible landscapes and unique experiences like snow trekking and visiting frozen lakes."
     },
     {
+      "id": 7,
       "name": "Skiing in Auli",
       "season": "winter",
       "totalBudget": 22000,
@@ -166,6 +176,7 @@
       "description": "Auli is a popular destination for winter sports, especially skiing, with stunning views of the Himalayas."
     },
     {
+      "id": 8,
       "name": "Christmas Vacation in Shimla",
       "season": "winter",
       "totalBudget": 15000,
@@ -192,6 +203,7 @@
       "description": "Celebrate Christmas in Shimla with snow, scenic views, and a charming colonial atmosphere."
     },
     {
+      "id": 9,
       "name": "Winter Adventure in Rishikesh",
       "season": "winter",
       "totalBudget": 13000,
@@ -217,6 +229,7 @@
       "description": "Rishikesh is a great winter destination for yoga, spirituality, and adventure sports."
     },
     {
+      "id": 10,
       "name": "Monsoon in Munnar",
       "season": "monsoon",
       "totalBudget": 12000,
@@ -240,6 +253,7 @@
       "description": "Munnar, with its lush tea plantations and misty hills, is an enchanting monsoon destination."
     },
     {
+      "id": 11,
       "name": "Monsoon in Munnar",
       "season": "monsoon",
       "totalBudget": 12000,
@@ -263,6 +277,7 @@
       "description": "Munnar, with its lush tea plantations and misty hills, is an enchanting monsoon destination."
     },
     {
+      "id": 12,
       "name": "Monsoon Escape to Coorg",
       "season": "monsoon",
       "totalBudget": 10000,
@@ -287,6 +302,7 @@
       "description": "Coorg is a monsoon haven with its rolling hills, lush greenery, and pleasant weather, ideal for nature lovers and adventure enthusiasts."
     },
     {
+      "id": 13,
       "name": "Monsoon in Wayanad",
       "season": "monsoon",
       "totalBudget": 11000,
@@ -310,6 +326,7 @@
       "description": "Wayanad is a hidden gem in Kerala, famous for its rich wildlife, picturesque waterfalls, and serene surroundings, especially during the monsoon."
     },
     {
+      "id": 14,
       "name": "Monsoon Retreat in Mahabalipuram",
       "season": "monsoon",
       "totalBudget": 9000,
@@ -332,6 +349,7 @@
       "description": "Mahabalipuram offers a wonderful mix of beachside relaxation and ancient architecture, perfect for a peaceful monsoon getaway."
     },
     {
+      "id": 15,
       "name": "Rainy Days in Shillong",
       "season": "monsoon",
       "totalBudget": 9500,
@@ -355,6 +373,7 @@
       "description": "Shillong, also known as the Scotland of the East, is perfect during the monsoon with its lush greenery, waterfalls, and misty landscapes."
     },
     {
+      "id": 16,
       "name": "Monsoon Bliss in Rishikesh",
       "season": "monsoon",
       "totalBudget": 12000,
@@ -379,6 +398,7 @@
       "description": "Rishikesh offers tranquility and adventure, with rafting, trekking, and spiritual experiences, making it perfect for a monsoon retreat."
     },
     {
+      "id": 17,
       "name": "Explore the Monsoons of Kerala",
       "season": "monsoon",
       "totalBudget": 15000,
@@ -404,6 +424,7 @@
       "description": "Kerala in the monsoon season offers a magical combination of backwaters, wildlife sanctuaries, and hill stations, perfect for a rejuvenating experience."
     },
     {
+      "id": 18,
       "name": "Monsoon Tour to Lonavala",
       "season": "monsoon",
       "totalBudget": 7000,
